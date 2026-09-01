@@ -19,67 +19,181 @@
     <section class="group">
       <h2>Payroll</h2>
       <ul class="items">
-        <li><span class="tag improved">Improved</span><p>More accurate W-2 overtime reporting for paychecks where overtime hours were split across a pay period boundary.</p></li>
-        <li><span class="tag improved">Improved</span><p>Added an option to mark an employee as not eligible for FLSA overtime, so W-2 overtime reporting is accurate for salaried and other exempt staff.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Military variables weren't printing on certain paperwork formats.</p></li>
+        <li>
+          <span class="tag improved">New</span>
+          <div>
+            <p class="headline">Mark employees as not eligible for FLSA overtime</p>
+            <p class="detail">A new checkbox &mdash; <strong>FLSA Overtime Eligible</strong> &mdash; has been added to the Employee Master File, Payroll tab. Federal law only requires overtime premium (W-2 Code TT) to be paid on hours actually covered by FLSA Section 7, which doesn't apply to salaried, administrative, highly-skilled, or owner employees. Unchecking this box for an employee excludes their overtime pay from W-2 Code TT reporting. Every existing employee defaults to eligible, so nothing changes for anyone unless you specifically mark them exempt.</p>
+          </div>
+        </li>
+        <li>
+          <span class="tag improved">Improved</span>
+          <div>
+            <p class="headline">More accurate W-2 overtime reporting for split paychecks</p>
+            <p class="detail">If an employee's overtime hours were split across a paycheck &mdash; some hours paid at regular rate, the rest at overtime &mdash; W-2 Code TT now correctly includes the premium for all of those overtime hours, not just the portion that was entered directly as an overtime line.</p>
+          </div>
+        </li>
+        <li>
+          <span class="tag fixed">Fixed</span>
+          <div>
+            <p class="headline">Military Variables not printing on Paperwork formats</p>
+            <p class="detail">Military Variables 1D and 1E are now printing correctly on Paperwork formats again.</p>
+          </div>
+        </li>
       </ul>
     </section>
 
     <section class="group">
       <h2>Accounts Payable</h2>
       <ul class="items">
-        <li><span class="tag fixed">Fixed</span><p>A check could be voided a second time when it shouldn't have been possible.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Print Checks could post to the wrong GL account in certain situations.</p></li>
-        <li><span class="tag improved">Improved</span><p>Clearer guidance text added to the Reclassify as Manual Check screen.</p></li>
+        <li>
+          <span class="tag fixed">Fixed</span>
+          <div>
+            <p class="headline">A check could be voided twice</p>
+            <p class="detail">Voiding an already-voided check is no longer possible.</p>
+          </div>
+        </li>
+        <li>
+          <span class="tag fixed">Fixed</span>
+          <div>
+            <p class="headline">Print Checks posting to the wrong GL account</p>
+            <p class="detail">In certain situations, Print Checks could post to an incorrect GL account. This is now corrected.</p>
+          </div>
+        </li>
+        <li>
+          <span class="tag improved">Improved</span>
+          <div>
+            <p class="headline">Clearer guidance on the Reclassify as Manual Check screen</p>
+            <p class="detail">Added on-screen text explaining what this action does, so it's clearer what to expect before confirming.</p>
+          </div>
+        </li>
       </ul>
     </section>
 
     <section class="group">
       <h2>Dispatch</h2>
       <ul class="items">
-        <li><span class="tag fixed">Fixed</span><p>Invoices could occasionally be created with a blank invoice number and not show up on the Invoices tab.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>A crash when opening Shipment Management from Dispatch.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Shipment Management could show outdated or incorrect status information for some jobs.</p></li>
+        <li>
+          <span class="tag fixed">Fixed</span>
+          <div>
+            <p class="headline">Invoices created with a blank invoice number</p>
+            <p class="detail">Invoices transferred from Dispatch billing could occasionally end up with no invoice number assigned, which meant they wouldn't appear on the Invoices tab in Accounts Receivable even though the billing itself had gone through correctly. A valid invoice number is now always assigned.</p>
+          </div>
+        </li>
+        <li>
+          <span class="tag fixed">Fixed</span>
+          <div>
+            <p class="headline">Crash opening Shipment Management</p>
+            <p class="detail">Opening Shipment Management from Dispatch could crash the application entirely, requiring a restart and re-adding shortcuts. This is now resolved.</p>
+          </div>
+        </li>
+        <li>
+          <span class="tag improved">Improved</span>
+          <div>
+            <p class="headline">More reliable Shipment Management job list</p>
+            <p class="detail">Jobs that had already been resolved could keep lingering in the "needs attention" list. Resolved jobs now drop off the list as expected, and each remaining job shows one clear, accurate reason it still needs review.</p>
+          </div>
+        </li>
       </ul>
     </section>
 
     <section class="group">
       <h2>General Ledger</h2>
       <ul class="items">
-        <li><span class="tag fixed">Fixed</span><p>Preparing a new budget year skipped Expense accounts, so new budgets had no expense figures.</p></li>
+        <li>
+          <span class="tag fixed">Fixed</span>
+          <div>
+            <p class="headline">New budget years missing Expense accounts</p>
+            <p class="detail">Preparing a new Budget Year (Actual basis) was skipping Expense accounts entirely, so a newly created budget had no expense figures at all &mdash; only Revenue accounts came through. Expense accounts are now included alongside Revenue accounts.</p>
+          </div>
+        </li>
       </ul>
     </section>
 
     <section class="group">
       <h2>Storage Manager</h2>
       <ul class="items">
-        <li><span class="tag fixed">Fixed</span><p>Certain storage lots were billing in the wrong month under quarterly billing.</p></li>
+        <li>
+          <span class="tag fixed">Fixed</span>
+          <div>
+            <p class="headline">Quarterly billing running a month late</p>
+            <p class="detail">Storage lots set to bill quarterly with a Starting Month of 2, 5, 8, or 11 using Behind accrual were billing a month later than they should have &mdash; and in one case, not billing at all. These lots now bill in the correct month.</p>
+          </div>
+        </li>
       </ul>
     </section>
 
     <section class="group">
       <h2>Van Line Statement Download</h2>
       <ul class="items">
-        <li><span class="tag fixed">Fixed</span><p>The statement preview's sort order could get stuck after sorting a column, and wouldn't reset back to the original order.</p></li>
+        <li>
+          <span class="tag fixed">Fixed</span>
+          <div>
+            <p class="headline">Statement preview sort order getting stuck</p>
+            <p class="detail">Once you sorted a column in the statement preview, it would stay sorted that way permanently &mdash; even clicking Reset couldn't bring back the original order. The preview now always opens in the original download order, regardless of any sorting from a previous session.</p>
+          </div>
+        </li>
       </ul>
     </section>
 
     <section class="group">
       <h2>Reporting</h2>
       <ul class="items">
-        <li><span class="tag fixed">Fixed</span><p>Generated PDF reports came out locked/encrypted, preventing editing in Adobe, even with no password set.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>A commissions report filter wasn't returning results for a specific posting type.</p></li>
+        <li>
+          <span class="tag fixed">Fixed</span>
+          <div>
+            <p class="headline">Generated PDFs locked against editing</p>
+            <p class="detail">PDF reports generated from Save As, Email, or automatic PDF creation were coming out encrypted with editing, copying, and form-filling disabled &mdash; even when no password was set. PDFs now generate fully open and editable unless you specifically enter a password when saving.</p>
+          </div>
+        </li>
+        <li>
+          <span class="tag fixed">Fixed</span>
+          <div>
+            <p class="headline">Commissions report filter returning no results</p>
+            <p class="detail">The Agent Master report's posting-type filter wasn't working &mdash; filtering to a specific posting type silently returned no records. This is now corrected.</p>
+          </div>
+        </li>
       </ul>
     </section>
 
     <section class="group">
       <h2>General</h2>
       <ul class="items">
-        <li><span class="tag fixed">Fixed</span><p>Ctrl+Tab didn't switch tabs on certain windows.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>The application could fail to start with no explanation if your database needed an update — a clear message is now shown instead.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Connection issues on sites using newer database drivers with longer names.</p></li>
-        <li><span class="tag improved">Improved</span><p>Further hardening of behind-the-scenes data handling and logging.</p></li>
-        <li><span class="tag improved">Improved</span><p>Updated the Help menu's remote-support link.</p></li>
+        <li>
+          <span class="tag fixed">Fixed</span>
+          <div>
+            <p class="headline">Ctrl+Tab not switching tabs</p>
+            <p class="detail">Ctrl+Tab wasn't switching between tabs on certain windows. Keyboard tab-switching now works consistently throughout the application.</p>
+          </div>
+        </li>
+        <li>
+          <span class="tag improved">Improved</span>
+          <div>
+            <p class="headline">Clear message when your database needs updating</p>
+            <p class="detail">If your database is behind the version Direct10 expects, the application would previously fail to start with no explanation. It now shows a clear message telling you the database needs to be updated, instead of leaving you guessing.</p>
+          </div>
+        </li>
+        <li>
+          <span class="tag fixed">Fixed</span>
+          <div>
+            <p class="headline">Connection failures on newer database drivers</p>
+            <p class="detail">Sites using newer ODBC database drivers combined with a longer database name could fail to connect at all, because the connection string field was too short to hold the full driver and database name together. This is now resolved.</p>
+          </div>
+        </li>
+        <li>
+          <span class="tag improved">Improved</span>
+          <div>
+            <p class="headline">Ongoing data-handling and logging hardening</p>
+            <p class="detail">Continued behind-the-scenes work to reduce what sensitive information gets written to diagnostic logs. No action needed on your part.</p>
+          </div>
+        </li>
+        <li>
+          <span class="tag improved">Improved</span>
+          <div>
+            <p class="headline">Updated remote-support link</p>
+            <p class="detail">The Help menu's remote-support link now points to our current support tool, replacing the retired link that no longer worked.</p>
+          </div>
+        </li>
       </ul>
     </section>
 
