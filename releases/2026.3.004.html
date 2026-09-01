@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Direct10 2026.3.004 Release Notes</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="site">
+      <a class="brand" href="../index.html">Direct<span>10</span> Release Notes</a>
+      <nav><a href="../index.html">All releases</a></nav>
+    </header>
+
+    <h1>2026.3.004 <span class="status-badge">Coming Soon</span></h1>
+    <p class="subtitle">Here's what's fixed and improved in this release.</p>
+
+    <section class="group">
+      <h2>Payroll</h2>
+      <ul class="items">
+        <li><span class="tag fixed">Fixed</span><p>Some overtime pay types were calculating at half the correct premium rate.</p></li>
+        <li><span class="tag fixed">Fixed</span><p>Overtime hours that carried over onto a later paycheck weren't always being reported correctly on the W-2.</p></li>
+        <li><span class="tag fixed">Fixed</span><p>Military variables weren't printing on certain paperwork formats.</p></li>
+        <li><span class="tag improved">Improved</span><p>Added an option to mark an employee as not eligible for FLSA overtime, so W-2 overtime reporting is accurate for salaried and other exempt staff.</p></li>
+        <li><span class="tag improved">Improved</span><p>Overtime type is now shown on historical paycheck detail screens.</p></li>
+      </ul>
+    </section>
+
+    <section class="group">
+      <h2>Accounts Payable</h2>
+      <ul class="items">
+        <li><span class="tag fixed">Fixed</span><p>A check could be voided a second time when it shouldn't have been possible.</p></li>
+        <li><span class="tag fixed">Fixed</span><p>Print Checks could post to the wrong GL account in certain situations.</p></li>
+        <li><span class="tag improved">Improved</span><p>Clearer guidance text added to the Reclassify as Manual Check screen.</p></li>
+      </ul>
+    </section>
+
+    <section class="group">
+      <h2>Accounts Receivable &amp; Dispatch</h2>
+      <ul class="items">
+        <li><span class="tag fixed">Fixed</span><p>Invoices could occasionally be created with a blank invoice number and not show up on the Invoices tab.</p></li>
+        <li><span class="tag fixed">Fixed</span><p>A crash when opening Shipment Management from Dispatch.</p></li>
+        <li><span class="tag fixed">Fixed</span><p>Shipment Management could show outdated or incorrect status information for some jobs.</p></li>
+      </ul>
+    </section>
+
+    <section class="group">
+      <h2>General Ledger</h2>
+      <ul class="items">
+        <li><span class="tag fixed">Fixed</span><p>Preparing a new budget year skipped Expense accounts, so new budgets had no expense figures.</p></li>
+      </ul>
+    </section>
+
+    <section class="group">
+      <h2>Storage Manager</h2>
+      <ul class="items">
+        <li><span class="tag fixed">Fixed</span><p>Certain storage lots were billing in the wrong month under quarterly billing.</p></li>
+      </ul>
+    </section>
+
+    <section class="group">
+      <h2>Van Line Statement Download</h2>
+      <ul class="items">
+        <li><span class="tag fixed">Fixed</span><p>The statement preview's sort order could get stuck after sorting a column, and wouldn't reset back to the original order.</p></li>
+      </ul>
+    </section>
+
+    <section class="group">
+      <h2>Reporting</h2>
+      <ul class="items">
+        <li><span class="tag fixed">Fixed</span><p>Generated PDF reports came out locked/encrypted, preventing editing in Adobe, even with no password set.</p></li>
+        <li><span class="tag fixed">Fixed</span><p>A commissions report filter wasn't returning results for a specific posting type.</p></li>
+      </ul>
+    </section>
+
+    <section class="group">
+      <h2>General</h2>
+      <ul class="items">
+        <li><span class="tag fixed">Fixed</span><p>Ctrl+Tab didn't switch tabs on certain windows.</p></li>
+        <li><span class="tag fixed">Fixed</span><p>The application could fail to start with no explanation if your database needed an update — a clear message is now shown instead.</p></li>
+        <li><span class="tag fixed">Fixed</span><p>Connection issues on sites using newer database drivers with longer names.</p></li>
+        <li><span class="tag improved">Improved</span><p>Further hardening of behind-the-scenes data handling and logging.</p></li>
+        <li><span class="tag improved">Improved</span><p>Updated the Help menu's remote-support link.</p></li>
+      </ul>
+    </section>
+
+    <footer class="site">
+      Direct Systems, Inc. &mdash; questions about a release? Contact your support representative.
+    </footer>
+  </div>
+</body>
+</html>
