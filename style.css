@@ -41,7 +41,7 @@ body {
 .sidebar {
   flex: 0 0 190px;
   position: sticky;
-  top: 24px;
+  top: 96px;
 }
 
 .sidebar h3 {
@@ -106,9 +106,15 @@ header.site {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
-  margin-bottom: 32px;
+  margin: 0 0 32px;
   flex-wrap: wrap;
   gap: 8px;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: var(--bg);
+  padding: 16px 0;
+  border-bottom: 1px solid var(--border);
 }
 
 header.site .brand {
