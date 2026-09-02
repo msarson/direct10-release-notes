@@ -30,8 +30,8 @@
     </div>
 
     <div class="summary-pills">
-      <span class="pill fixed">12 Fixed</span>
-      <span class="pill improved">6 Improved</span>
+      <span class="pill fixed">13 Fixed</span>
+      <span class="pill improved">5 Improved</span>
       <span class="pill improved">3 New</span>
     </div>
 
@@ -79,8 +79,8 @@
           <p class="detail">A new <strong>Generate W-2 TT Calculations</strong> screen lets you review the calculated Code TT figure for each employee before finalizing W-2s, and manually adjust it where needed. This is aimed at customers using Overtime Special Rate, since Direct10 can't always calculate that figure automatically for that pay type. Employees using standard overtime entry are unaffected.</p>
         </li>
         <li>
-          <p class="headline">More accurate W-2 overtime reporting for split paychecks <span class="tag improved">Improved</span></p>
-          <p class="detail">If an employee's overtime hours were split across a paycheck &mdash; some hours paid at regular rate, the rest at overtime &mdash; W-2 Code TT now correctly includes the premium for all of those overtime hours, not just the portion that was entered directly as an overtime line.</p>
+          <p class="headline">W-2 overtime premium missing for split paychecks <span class="tag fixed">Fixed</span></p>
+          <p class="detail">If an employee's overtime hours were split across a paycheck &mdash; some hours paid at regular rate, the rest at overtime &mdash; W-2 Code TT only included the premium for the portion entered directly as an overtime line, undercounting the rest. It now correctly includes the premium for all of those overtime hours.</p>
         </li>
         <li>
           <p class="headline">Overtime Special Rate being replaced by Overtime Types from 2027 <span class="tag improved">New</span></p>
@@ -97,8 +97,8 @@
       </h2>
       <ul class="items">
         <li>
-          <p class="headline">A check could be voided twice <span class="tag fixed">Fixed</span></p>
-          <p class="detail">Voiding an already-voided check is no longer possible.</p>
+          <p class="headline">Voiding a check could wrongly prompt to "Reclassify as Manual Check" <span class="tag fixed">Fixed</span></p>
+          <p class="detail">If a check number had previously been voided and reused for a new check, voiding that new check could incorrectly show the "Reclassify as Manual Check" prompt instead of voiding normally &mdash; even though the check had never actually been voided before. Voiding now works correctly regardless of whether the check number was previously reused.</p>
         </li>
         <li>
           <p class="headline">Print Checks posting to the wrong GL account <span class="tag fixed">Fixed</span></p>
@@ -187,7 +187,7 @@
           <p class="detail">PDFs have always been generated as read-only, whether attached to an email or saved to disk. When saving a PDF to disk, you're now shown a <strong>Print and View Only</strong> option, checked by default to keep the existing behavior &mdash; uncheck it to save an editable PDF instead. PDFs attached to emails remain read-only, and any PDF saved with a password is always read-only regardless of this setting.</p>
         </li>
         <li>
-          <p class="headline">Commissions report filter returning no results <span class="tag fixed">Fixed</span></p>
+          <p class="headline">Agent Master report filter returning no results <span class="tag fixed">Fixed</span></p>
           <p class="detail">The Agent Master report's posting-type filter wasn't working &mdash; filtering to a specific posting type silently returned no records. This is now corrected.</p>
         </li>
       </ul>
