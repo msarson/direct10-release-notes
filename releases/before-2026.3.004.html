@@ -27,310 +27,326 @@
     <h1>Before 2026.3.004</h1>
     <p class="subtitle">A historical summary of fixes and improvements from earlier versions, going back to the start of the issue tracker. Grouped by module, one line each rather than the fuller detail used for current releases.</p>
 
-    <section class="group">
+    <nav class="section-nav">
+      <a href="#payroll">Payroll</a><span class="sep">·</span>
+      <a href="#accounts-payable">Accounts Payable</a><span class="sep">·</span>
+      <a href="#accounts-receivable">Accounts Receivable</a><span class="sep">·</span>
+      <a href="#dispatch">Dispatch</a><span class="sep">·</span>
+      <a href="#general-ledger">General Ledger</a><span class="sep">·</span>
+      <a href="#bank-account-manager">Bank Account Manager</a><span class="sep">·</span>
+      <a href="#commissions-manager">Commissions Manager</a><span class="sep">·</span>
+      <a href="#storage-manager">Storage Manager</a><span class="sep">·</span>
+      <a href="#van-line-statement-download">Van Line Statement Download</a><span class="sep">·</span>
+      <a href="#sales-lead-tracker">Sales/Lead Tracker</a><span class="sep">·</span>
+      <a href="#warehouse-locator">Warehouse Locator</a><span class="sep">·</span>
+      <a href="#commercial-records-storage">Commercial Records Storage</a><span class="sep">·</span>
+      <a href="#general">General</a>
+    </nav>
+
+    <section class="group" id="payroll">
       <h2>
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M9.5 9.2c0-1.1 1.1-2 2.5-2s2.5.9 2.5 2-1.1 1.7-2.5 2-2.5.9-2.5 2 1.1 2 2.5 2 2.5-.9 2.5-2"/><path d="M12 6v1.2M12 16.8V18"/></svg>
         Payroll
       </h2>
       <ul class="items">
-        <li><span class="tag fixed">Fixed</span><p>Quarterly Unemployment Tax Liability Report.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Yearly FUTA Liability Report dropdown issues.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Print Payroll Checks view.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Payroll database summary.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Edit Hours Database in Payroll.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Payroll history (all employees) screen no longer needs manual resizing.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Print journals in Payroll.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Print Daily Reports in Payroll.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Print Time Card in Payroll.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Payroll history (one employee) screen no longer needs manual resizing.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Void Payroll Check.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Print Payroll Check reports.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Payroll History (one employee) View error.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Payroll History (all employees) View error.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Monthly/Quarterly/Yearly Deduction Reports.</p></li>
+        <li><p class="headline">Quarterly Unemployment Tax Liability Report. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Yearly FUTA Liability Report dropdown issues. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Print Payroll Checks view. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Payroll database summary. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Edit Hours Database in Payroll. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Payroll history (all employees) screen no longer needs manual resizing. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Print journals in Payroll. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Print Daily Reports in Payroll. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Print Time Card in Payroll. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Payroll history (one employee) screen no longer needs manual resizing. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Void Payroll Check. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Print Payroll Check reports. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Payroll History (one employee) View error. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Payroll History (all employees) View error. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Monthly/Quarterly/Yearly Deduction Reports. <span class="tag fixed">Fixed</span></p></li>
       </ul>
     </section>
 
-    <section class="group">
+    <section class="group" id="accounts-payable">
       <h2>
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="12" height="16" rx="2"/><path d="M6 9h6M6 13h4"/><path d="M15 12h6m0 0-3-3m3 3-3 3"/></svg>
         Accounts Payable
       </h2>
       <ul class="items">
-        <li><span class="tag fixed">Fixed</span><p>AP Cut Off report no longer takes an excessive amount of time to run.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Totals on All Vendor Selections dropdown.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Recurring Payables.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Selecting A/P invoices for payment (one vendor).</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Printing 1099s.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>AP invoice entry (multiple related issues).</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Print Checks (one vendor).</p></li>
-        <li><span class="tag improved">Improved</span><p>Added a CSV export report for ACH/CorPay check-run submissions from AP Print Checks.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>AP 1099 form error for the current tax year.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Selecting and printing A/P checks.</p></li>
+        <li><p class="headline">AP Cut Off report no longer takes an excessive amount of time to run. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Totals on All Vendor Selections dropdown. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Recurring Payables. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Selecting A/P invoices for payment (one vendor). <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Printing 1099s. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">AP invoice entry (multiple related issues). <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Print Checks (one vendor). <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Added a CSV export report for ACH/CorPay check-run submissions from AP Print Checks. <span class="tag improved">Improved</span></p></li>
+        <li><p class="headline">AP 1099 form error for the current tax year. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Selecting and printing A/P checks. <span class="tag fixed">Fixed</span></p></li>
       </ul>
     </section>
 
-    <section class="group">
+    <section class="group" id="accounts-receivable">
       <h2>
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="4" width="12" height="16" rx="2"/><path d="M12 9h6M12 13h4"/><path d="M9 12H3m0 0 3-3m-3 3 3 3"/></svg>
         Accounts Receivable
       </h2>
       <ul class="items">
-        <li><span class="tag fixed">Fixed</span><p>Reconciling the Van Line Statement Download file from AR.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Unknown Customer incorrectly showing on the National Account/Credit window.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>GL Composition Report.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Commission Agent name now shows on the Commission history tab.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Building invoices from assignments in View/Edit Active Invoices.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>AR query export.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Applied cash bank number not identified.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Apply Cash workflow completion.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>AR Print Invoices.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Inserting a Commission Agent from the Master AR invoice.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Long file number bug (AR/Commissions).</p></li>
-        <li><span class="tag fixed">Fixed</span><p>AR1 query on the File menu.</p></li>
-        <li><span class="tag improved">Improved</span><p>Reflected recent tax changes in AR.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>AR Billing Code (Undisclosed Linehaul).</p></li>
-        <li><span class="tag fixed">Fixed</span><p>AR Create Deficit Statement JE amounts — repro steps preserved for the future; not currently reproducible on the live SQL codebase.</p></li>
-        <li><span class="tag improved">Improved</span><p>Added a File Number choice to the emailed invoice subject line.</p></li>
+        <li><p class="headline">Reconciling the Van Line Statement Download file from AR. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Unknown Customer incorrectly showing on the National Account/Credit window. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">GL Composition Report. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Commission Agent name now shows on the Commission history tab. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Building invoices from assignments in View/Edit Active Invoices. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">AR query export. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Applied cash bank number not identified. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Apply Cash workflow completion. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">AR Print Invoices. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Inserting a Commission Agent from the Master AR invoice. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Long file number bug (AR/Commissions). <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">AR1 query on the File menu. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Reflected recent tax changes in AR. <span class="tag improved">Improved</span></p></li>
+        <li><p class="headline">AR Billing Code (Undisclosed Linehaul). <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">AR Create Deficit Statement JE amounts — repro steps preserved for the future; not currently reproducible on the live SQL codebase. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Added a File Number choice to the emailed invoice subject line. <span class="tag improved">Improved</span></p></li>
       </ul>
     </section>
 
-    <section class="group">
+    <section class="group" id="dispatch">
       <h2>
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 16V7a1 1 0 0 1 1-1h9v10"/><path d="M13 10h4l3 3v3h-2"/><circle cx="7" cy="17" r="1.8"/><circle cx="17" cy="17" r="1.8"/><path d="M9 17h6"/></svg>
         Dispatch
       </h2>
       <ul class="items">
-        <li><span class="tag fixed">Fixed</span><p>Enterprise File Utilities — Bulky Article Selection File.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Refreshing additional service providers.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Error assigning IBS Rating Tariffs.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Invalid character cast error.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Error refreshing Standard Rating Items.</p></li>
-        <li><span class="tag improved">Improved</span><p>Added combined vendor links.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Error adding a tariff to a charges profile.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Missing button in Shipment Management restored.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Shipment Management window crash.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Task For dropdown being empty when loading a task onto a shipment.</p></li>
-        <li><span class="tag improved">Improved</span><p>Dispatch report printing.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Company Jobs.</p></li>
-        <li><span class="tag improved">Improved</span><p>Added the ability to set a Control Date when editing shipments.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Add Shipments.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Job Role Supervisor permission enforcement on Tasks.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Work Ticket Assignments could not be modified.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Clone Master locking up the program.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Misspelled word on the Carrier Delivery Report.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Tab key order on the Add New Company Job window.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Various Shipment Management display issues.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Active Shipments — Tasks buttons overlap.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Active Shipments — Print Work Ticket.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Active Shipments — Tariff screens (two related issues).</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Refreshing the Job Service Control File (Atlas/HHG showing as Unknown VanLine).</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Buttons on the Active Job window brought back in line with the previous version.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Clone Master unable to save / locking up.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Active Shipments — Work Ticket Instructions.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Load Board — Assign Teams button error.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Load Board — Print Work Ticket button error.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Load Board — Assignments window error.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Load Board — Instructions button error.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Import Standard Letters button error.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Shipment source showing a non-existent record.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Clone Tariff procedure (IBSBilling).</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Discrepancies between Active Company Jobs display tables.</p></li>
-        <li><span class="tag improved">Improved</span><p>Images window title now includes Job # and Shipper's Name.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>MoverBiz Dispatch Manager print report.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>MoverBiz load board report viewer.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>MoverBiz Trip Planner error.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>MoverBiz View Detail Report.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>MoverBiz Report Viewer error.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Misspelled word on the Derived Mileage screens.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Active Shipments — Standard Letters.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Billing Type, Weight Type, Pricing Type, and Insurance Type.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>File # and Alt Key not updating on shipments.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Tab key changing the wrong field.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Containers Tab reports on Active Job.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>State field auto-populating incorrectly on a specific customer's instance.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Billing — View/Edit Active Invoices — Print Summary.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Active Shipment — Billing Info — changing/printing an invoice.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Buttons that shouldn't be available for completed jobs now correctly disabled.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Adding letters causing Dispatch to shut down.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Active Job screen.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Dispatch invoice format adding extra lines when sent to Notepad.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>A duplicate customer record issue resolved for an affected site.</p></li>
+        <li><p class="headline">Enterprise File Utilities — Bulky Article Selection File. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Refreshing additional service providers. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Error assigning IBS Rating Tariffs. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Invalid character cast error. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Error refreshing Standard Rating Items. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Added combined vendor links. <span class="tag improved">Improved</span></p></li>
+        <li><p class="headline">Error adding a tariff to a charges profile. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Missing button in Shipment Management restored. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Shipment Management window crash. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Task For dropdown being empty when loading a task onto a shipment. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Dispatch report printing. <span class="tag improved">Improved</span></p></li>
+        <li><p class="headline">Company Jobs. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Added the ability to set a Control Date when editing shipments. <span class="tag improved">Improved</span></p></li>
+        <li><p class="headline">Add Shipments. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Job Role Supervisor permission enforcement on Tasks. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Work Ticket Assignments could not be modified. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Clone Master locking up the program. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Misspelled word on the Carrier Delivery Report. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Tab key order on the Add New Company Job window. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Various Shipment Management display issues. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Active Shipments — Tasks buttons overlap. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Active Shipments — Print Work Ticket. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Active Shipments — Tariff screens (two related issues). <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Refreshing the Job Service Control File (Atlas/HHG showing as Unknown VanLine). <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Buttons on the Active Job window brought back in line with the previous version. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Clone Master unable to save / locking up. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Active Shipments — Work Ticket Instructions. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Load Board — Assign Teams button error. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Load Board — Print Work Ticket button error. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Load Board — Assignments window error. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Load Board — Instructions button error. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Import Standard Letters button error. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Shipment source showing a non-existent record. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Clone Tariff procedure (IBSBilling). <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Discrepancies between Active Company Jobs display tables. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Images window title now includes Job # and Shipper's Name. <span class="tag improved">Improved</span></p></li>
+        <li><p class="headline">MoverBiz Dispatch Manager print report. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">MoverBiz load board report viewer. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">MoverBiz Trip Planner error. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">MoverBiz View Detail Report. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">MoverBiz Report Viewer error. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Misspelled word on the Derived Mileage screens. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Active Shipments — Standard Letters. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Billing Type, Weight Type, Pricing Type, and Insurance Type. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">File # and Alt Key not updating on shipments. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Tab key changing the wrong field. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Containers Tab reports on Active Job. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">State field auto-populating incorrectly on a specific customer's instance. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Billing — View/Edit Active Invoices — Print Summary. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Active Shipment — Billing Info — changing/printing an invoice. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Buttons that shouldn't be available for completed jobs now correctly disabled. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Adding letters causing Dispatch to shut down. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Active Job screen. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Dispatch invoice format adding extra lines when sent to Notepad. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">A duplicate customer record issue resolved for an affected site. <span class="tag fixed">Fixed</span></p></li>
       </ul>
     </section>
 
-    <section class="group">
+    <section class="group" id="general-ledger">
       <h2>
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6c-1.5-1-4-1.3-6-1v13c2 0 4.5.3 6 1.3 1.5-1 4-1.3 6-1.3V5c-2-.3-4.5 0-6 1Z"/><path d="M12 6v13"/><path d="M7 9h3M7 12h3M14 9h3M14 12h3"/></svg>
         General Ledger
       </h2>
       <ul class="items">
-        <li><span class="tag fixed">Fixed</span><p>Chart of Accounts report showing incorrect restricted values.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Exit button disabled in Repair Out of Balance / Journal Entry screens.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Query not working in GL.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Merge GL Accounts staying active.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Journals — Print Listing — Print To File.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Recurring JE Entry screen.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>GL Journal Entry.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Initial GL account number field setup.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Recurring JE distribution not ending properly.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Trial Balance (Simple, All Months) — Print to File CSV.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Recurring JE.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>History (One GL Account, One Month, Summary by Batch) — Print to File and DR/CR listing.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Fiscal Date going blank after a Fiscal Year change.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Close GL Year failing to complete.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>GL Distribution editing.</p></li>
+        <li><p class="headline">Chart of Accounts report showing incorrect restricted values. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Exit button disabled in Repair Out of Balance / Journal Entry screens. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Query not working in GL. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Merge GL Accounts staying active. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Journals — Print Listing — Print To File. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Recurring JE Entry screen. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">GL Journal Entry. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Initial GL account number field setup. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Recurring JE distribution not ending properly. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Trial Balance (Simple, All Months) — Print to File CSV. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Recurring JE. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">History (One GL Account, One Month, Summary by Batch) — Print to File and DR/CR listing. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Fiscal Date going blank after a Fiscal Year change. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Close GL Year failing to complete. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">GL Distribution editing. <span class="tag fixed">Fixed</span></p></li>
       </ul>
     </section>
 
-    <section class="group">
+    <section class="group" id="bank-account-manager">
       <h2>
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10 12 4l9 6"/><path d="M4 10v9M8 10v9M12 10v9M16 10v9M20 10v9"/><path d="M3 19h18"/></svg>
         Bank Account Manager
       </h2>
       <ul class="items">
-        <li><span class="tag fixed">Fixed</span><p>New Deposit — disabled buttons.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Overlapping buttons on the main screen.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Journals — Adjustments for one GL not printing line details.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Change Current Bank Account option.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Checks Register positioned incorrectly.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Query not working in Bank Account module.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Selected Bank Adjustment showing in the wrong column on Print Listing.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Exception error when exiting Print Deposit Receipt.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Edit Bank Account — Insert.</p></li>
+        <li><p class="headline">New Deposit — disabled buttons. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Overlapping buttons on the main screen. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Journals — Adjustments for one GL not printing line details. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Change Current Bank Account option. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Checks Register positioned incorrectly. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Query not working in Bank Account module. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Selected Bank Adjustment showing in the wrong column on Print Listing. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Exception error when exiting Print Deposit Receipt. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Edit Bank Account — Insert. <span class="tag fixed">Fixed</span></p></li>
       </ul>
     </section>
 
-    <section class="group">
+    <section class="group" id="commissions-manager">
       <h2>
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9 15 15 9"/><circle cx="9.5" cy="9.5" r="1.3"/><circle cx="14.5" cy="14.5" r="1.3"/></svg>
         Commissions Manager
       </h2>
       <ul class="items">
-        <li><span class="tag fixed">Fixed</span><p>Posted Balances — Print Listing — Print to File alignment.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>1099 report.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>1099 screen not staying open.</p></li>
+        <li><p class="headline">Posted Balances — Print Listing — Print to File alignment. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">1099 report. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">1099 screen not staying open. <span class="tag fixed">Fixed</span></p></li>
       </ul>
     </section>
 
-    <section class="group">
+    <section class="group" id="storage-manager">
       <h2>
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8 12 4l9 4-9 4-9-4Z"/><path d="M3 8v9l9 4 9-4V8"/><path d="M12 12v9"/></svg>
         Storage Manager
       </h2>
       <ul class="items">
-        <li><span class="tag fixed">Fixed</span><p>Select button inactive.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Storage Billing Journal query field names corrected.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Reprint Invoices — check-mark column clarified.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Emailing invoices from Reprint Invoices, and the Email Log display.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Process Storage Billing not creating a Storage Invoice.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Storage Insurance Report.</p></li>
-        <li><span class="tag improved">Improved</span><p>Added a Received Date restriction on the Storage Master File.</p></li>
+        <li><p class="headline">Select button inactive. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Storage Billing Journal query field names corrected. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Reprint Invoices — check-mark column clarified. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Emailing invoices from Reprint Invoices, and the Email Log display. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Process Storage Billing not creating a Storage Invoice. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Storage Insurance Report. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Added a Received Date restriction on the Storage Master File. <span class="tag improved">Improved</span></p></li>
       </ul>
     </section>
 
-    <section class="group">
+    <section class="group" id="van-line-statement-download">
       <h2>
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="3" width="14" height="14" rx="2"/><path d="M8 7h8M8 10h5"/><path d="M12 21v-6m0 6-3-3m3 3 3-3"/></svg>
         Van Line Statement Download
       </h2>
       <ul class="items">
-        <li><span class="tag fixed">Fixed</span><p>Billing codes not matching correctly.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Registration Utilities buttons not opening Atlas/UniGroup setup windows.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Applied cash deposit still showing after reconciling a statement.</p></li>
+        <li><p class="headline">Billing codes not matching correctly. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Registration Utilities buttons not opening Atlas/UniGroup setup windows. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Applied cash deposit still showing after reconciling a statement. <span class="tag fixed">Fixed</span></p></li>
       </ul>
     </section>
 
-    <section class="group">
+    <section class="group" id="sales-lead-tracker">
       <h2>
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="3.2"/><path d="M5 20c0-3.5 3-6 7-6s7 2.5 7 6"/><path d="M18 5v4M16 7h4"/></svg>
         Sales/Lead Tracker
       </h2>
       <ul class="items">
-        <li><span class="tag fixed">Fixed</span><p>Illegal operation error transferring a prospect.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Overlapping fields in Tariff Maintenance.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Salesperson Activity Report.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Scheduling an appointment for a prospect.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Print Labels not working properly.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Unable to delete a task on a lead.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Sales agent not appearing in the leads browse.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Copy to clipboard on Contacts Letters.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Sales Agent Activity Report.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Export Email.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Message Board can now be disabled.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Lookup not working in Edit Users.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Extra buttons on Select Company Branch (Leads-History) removed.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Fields not displaying fully in Purge Lead History.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Misspelled word in the Calendar (Purge Prospect History).</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Several issues in Purge Prospect History.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Edit Company Name option.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>SLT not transferring to Dispatch.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Hot keys not working.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Prospect Salesperson dropdown.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>"What's New" info not displaying.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Extra buttons on Select Commission Agent removed.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Extra buttons in Edit Users removed (two related issues).</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Print Labels permission check.</p></li>
+        <li><p class="headline">Illegal operation error transferring a prospect. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Overlapping fields in Tariff Maintenance. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Salesperson Activity Report. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Scheduling an appointment for a prospect. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Print Labels not working properly. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Unable to delete a task on a lead. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Sales agent not appearing in the leads browse. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Copy to clipboard on Contacts Letters. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Sales Agent Activity Report. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Export Email. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Message Board can now be disabled. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Lookup not working in Edit Users. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Extra buttons on Select Company Branch (Leads-History) removed. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Fields not displaying fully in Purge Lead History. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Misspelled word in the Calendar (Purge Prospect History). <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Several issues in Purge Prospect History. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Edit Company Name option. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">SLT not transferring to Dispatch. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Hot keys not working. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Prospect Salesperson dropdown. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">"What's New" info not displaying. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Extra buttons on Select Commission Agent removed. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Extra buttons in Edit Users removed (two related issues). <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Print Labels permission check. <span class="tag fixed">Fixed</span></p></li>
       </ul>
     </section>
 
-    <section class="group">
+    <section class="group" id="warehouse-locator">
       <h2>
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="9" width="18" height="11" rx="1"/><path d="M3 9 12 4l9 5"/><rect x="10" y="13" width="4" height="7"/></svg>
         Warehouse Locator
       </h2>
       <ul class="items">
-        <li><span class="tag fixed">Fixed</span><p>Change Current Warehouse not displaying in the title bar.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Storage Vault invalid types.</p></li>
+        <li><p class="headline">Change Current Warehouse not displaying in the title bar. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Storage Vault invalid types. <span class="tag fixed">Fixed</span></p></li>
       </ul>
     </section>
 
-    <section class="group">
+    <section class="group" id="commercial-records-storage">
       <h2>
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="8" width="16" height="12" rx="1.5"/><path d="M4 8V6a1 1 0 0 1 1-1h5l2 2h7a1 1 0 0 1 1 1v0"/></svg>
         Commercial Records Storage
       </h2>
       <ul class="items">
-        <li><span class="tag fixed">Fixed</span><p>Pull List — hidden Customer Browse button restored.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Activity Schedule — Customer Name lookup by typing.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Recurring Charges unit field.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>File Activity — Manual Entry by Container ID.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Standard Settings File GL account field.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Rate Schedule GL Account field.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>GL field entry.</p></li>
+        <li><p class="headline">Pull List — hidden Customer Browse button restored. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Activity Schedule — Customer Name lookup by typing. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Recurring Charges unit field. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">File Activity — Manual Entry by Container ID. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Standard Settings File GL account field. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Rate Schedule GL Account field. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">GL field entry. <span class="tag fixed">Fixed</span></p></li>
       </ul>
     </section>
 
-    <section class="group">
+    <section class="group" id="general">
       <h2>
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 3v2M12 19v2M4.2 7l1.7 1M18 16l1.7 1M4.2 17l1.7-1M18 8l1.7-1M3 12h2M19 12h2"/></svg>
         General
       </h2>
       <ul class="items">
-        <li><span class="tag fixed">Fixed</span><p>New User Setup issues.</p></li>
-        <li><span class="tag improved">Improved</span><p>Clarified Email button wording.</p></li>
-        <li><span class="tag improved">Improved</span><p>Added tokens for email body content.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>PrintForm ghost tab sheet.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Incorrect list-box selection colors.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Calendar — moving between years.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Alt key shortcuts on menus.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>IBS Main Menu occasionally hanging.</p></li>
-        <li><span class="tag improved">Improved</span><p>Added a Clear Date button to the Calendar.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Select button on the Calendar pop-up.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>FTP/NetTalk download error.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Email sending.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Help Files not working from modules that call IBSCommon.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Help button.</p></li>
-        <li><span class="tag improved">Improved</span><p>Clarified user shortcut setup.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>User ID field spacing bug.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Hot keys not working across all apps.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>IBS Setup CSB locations.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Toolbar menu appearing without hovering.</p></li>
-        <li><span class="tag improved">Improved</span><p>Removed old shortcut menu items and related code.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>"How updates work" info page loading.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>Update mechanism fixed for a site that couldn't update.</p></li>
-        <li><span class="tag improved">Improved</span><p>Clarified confirmation wording when choosing a drive path during setup.</p></li>
-        <li><span class="tag fixed">Fixed</span><p>An illegal operation (crash) error.</p></li>
+        <li><p class="headline">New User Setup issues. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Clarified Email button wording. <span class="tag improved">Improved</span></p></li>
+        <li><p class="headline">Added tokens for email body content. <span class="tag improved">Improved</span></p></li>
+        <li><p class="headline">PrintForm ghost tab sheet. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Incorrect list-box selection colors. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Calendar — moving between years. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Alt key shortcuts on menus. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">IBS Main Menu occasionally hanging. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Added a Clear Date button to the Calendar. <span class="tag improved">Improved</span></p></li>
+        <li><p class="headline">Select button on the Calendar pop-up. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">FTP/NetTalk download error. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Email sending. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Help Files not working from modules that call IBSCommon. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Help button. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Clarified user shortcut setup. <span class="tag improved">Improved</span></p></li>
+        <li><p class="headline">User ID field spacing bug. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Hot keys not working across all apps. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">IBS Setup CSB locations. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Toolbar menu appearing without hovering. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Removed old shortcut menu items and related code. <span class="tag improved">Improved</span></p></li>
+        <li><p class="headline">"How updates work" info page loading. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Update mechanism fixed for a site that couldn't update. <span class="tag fixed">Fixed</span></p></li>
+        <li><p class="headline">Clarified confirmation wording when choosing a drive path during setup. <span class="tag improved">Improved</span></p></li>
+        <li><p class="headline">An illegal operation (crash) error. <span class="tag fixed">Fixed</span></p></li>
       </ul>
     </section>
 

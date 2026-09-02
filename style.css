@@ -163,6 +163,84 @@ h1 {
   vertical-align: middle;
 }
 
+.version-panel {
+  margin-bottom: 24px;
+}
+
+.version-panel .version-name {
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+.version-panel .version-status {
+  margin-top: 6px;
+}
+
+.version-panel .version-status .status-badge {
+  margin-left: 0;
+}
+
+.highlights {
+  background: var(--accent-soft);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px 22px;
+  margin-bottom: 20px;
+}
+
+.highlights h2 {
+  font-size: 1.05rem;
+  margin: 0 0 10px;
+}
+
+.highlights > p {
+  margin: 0 0 12px;
+  color: var(--text);
+}
+
+.highlights ul {
+  margin: 0 0 14px;
+  padding-left: 20px;
+}
+
+.highlights ul li {
+  margin-bottom: 4px;
+}
+
+.highlights .note {
+  margin: 0;
+  font-size: 0.88rem;
+  color: var(--text-muted);
+}
+
+.section-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 4px;
+  margin-bottom: 28px;
+  font-size: 0.88rem;
+}
+
+.section-nav a {
+  color: var(--accent);
+  text-decoration: none;
+  padding: 4px 8px;
+  border-radius: 6px;
+}
+
+.section-nav a:hover {
+  background: var(--accent-soft);
+}
+
+.section-nav .sep {
+  color: var(--text-muted);
+}
+
+.all-changes-heading {
+  font-size: 1.15rem;
+  margin: 8px 0 4px;
+}
+
 .release-list {
   list-style: none;
   margin: 0;
@@ -235,13 +313,14 @@ section.group h2 svg {
   border: 1px solid var(--border);
   border-radius: 10px;
   padding: 14px 16px;
-  display: flex;
-  gap: 10px;
-  align-items: flex-start;
 }
 
 .items .headline {
   font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
 }
 
 .items .detail {
@@ -250,17 +329,24 @@ section.group h2 svg {
   font-size: 0.92rem;
 }
 
+.items .applies-to {
+  margin-top: 6px;
+  font-size: 0.86rem;
+  color: var(--text-muted);
+}
+
+.items .applies-to strong {
+  color: var(--text);
+}
+
 .tag {
-  flex: 0 0 74px;
-  width: 74px;
-  text-align: center;
+  flex: 0 0 auto;
   font-size: 0.68rem;
   font-weight: 700;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  padding: 3px 4px;
-  border-radius: 6px;
-  margin-top: 2px;
+  padding: 3px 9px;
+  border-radius: 999px;
 }
 
 .tag.fixed { background: var(--fixed-soft); color: var(--fixed); }

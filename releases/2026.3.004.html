@@ -24,210 +24,184 @@
 
       <div class="main-content">
 
-    <h1>2026.3.004 <span class="status-badge">Coming Soon</span></h1>
-    <p class="subtitle">Here's what's fixed and improved in this release.</p>
+    <div class="version-panel">
+      <div class="version-name">Direct10 2026.3.004</div>
+      <div class="version-status"><span class="status-badge">Coming Soon</span></div>
+    </div>
 
-    <section class="group">
+    <div class="highlights">
+      <h2>What you should know about 2026.3.004</h2>
+      <p>2026.3.004 includes improvements across Payroll, Accounts Payable, Dispatch, General Ledger, Storage Manager, and Reporting.</p>
+      <ul>
+        <li>New FLSA overtime eligibility option</li>
+        <li>Improved W-2 overtime calculation</li>
+        <li>Dispatch invoice reliability</li>
+        <li>Storage quarterly billing correction</li>
+        <li>PDFs no longer unnecessarily restricted</li>
+        <li>Improved database/update messages</li>
+      </ul>
+      <p class="note">No action is required for most changes. Where a new option or setting is available, it's explained below.</p>
+    </div>
+
+    <nav class="section-nav">
+      <a href="#payroll">Payroll</a><span class="sep">·</span>
+      <a href="#accounts-payable">Accounts Payable</a><span class="sep">·</span>
+      <a href="#dispatch">Dispatch</a><span class="sep">·</span>
+      <a href="#general-ledger">General Ledger</a><span class="sep">·</span>
+      <a href="#storage-manager">Storage Manager</a><span class="sep">·</span>
+      <a href="#van-line-statement-download">Van Line Statements</a><span class="sep">·</span>
+      <a href="#reporting">Reporting</a><span class="sep">·</span>
+      <a href="#general">General</a>
+    </nav>
+
+    <h2 class="all-changes-heading">All changes in 2026.3.004</h2>
+
+    <section class="group" id="payroll">
       <h2>
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M9.5 9.2c0-1.1 1.1-2 2.5-2s2.5.9 2.5 2-1.1 1.7-2.5 2-2.5.9-2.5 2 1.1 2 2.5 2 2.5-.9 2.5-2"/><path d="M12 6v1.2M12 16.8V18"/></svg>
         Payroll
       </h2>
       <ul class="items">
         <li>
-          <span class="tag improved">New</span>
-          <div>
-            <p class="headline">Mark employees as not eligible for FLSA overtime</p>
-            <p class="detail">A new checkbox &mdash; <strong>FLSA Overtime Eligible</strong> &mdash; has been added to the Employee Master File, Payroll tab. Federal law only requires overtime premium (W-2 Code TT) to be paid on hours actually covered by FLSA Section 7, which doesn't apply to salaried, administrative, highly-skilled, or owner employees. Unchecking this box for an employee excludes their overtime pay from W-2 Code TT reporting. Every existing employee defaults to eligible, so nothing changes for anyone unless you specifically mark them exempt.</p>
-          </div>
+          <p class="headline">Mark employees as not eligible for FLSA overtime <span class="tag improved">New</span></p>
+          <p class="applies-to"><strong>Applies to:</strong> customers using Direct10 Payroll and W-2 Code TT reporting.</p>
+          <p class="detail">A new <strong>FLSA Overtime Eligible</strong> checkbox has been added to the Employee Master File, Payroll tab. Employees marked as not eligible will be excluded from W-2 Code TT overtime reporting. Existing employees default to eligible, so current reporting is unchanged unless you update this setting.</p>
         </li>
         <li>
-          <span class="tag improved">Improved</span>
-          <div>
-            <p class="headline">More accurate W-2 overtime reporting for split paychecks</p>
-            <p class="detail">If an employee's overtime hours were split across a paycheck &mdash; some hours paid at regular rate, the rest at overtime &mdash; W-2 Code TT now correctly includes the premium for all of those overtime hours, not just the portion that was entered directly as an overtime line.</p>
-          </div>
+          <p class="headline">More accurate W-2 overtime reporting for split paychecks <span class="tag improved">Improved</span></p>
+          <p class="detail">If an employee's overtime hours were split across a paycheck &mdash; some hours paid at regular rate, the rest at overtime &mdash; W-2 Code TT now correctly includes the premium for all of those overtime hours, not just the portion that was entered directly as an overtime line.</p>
         </li>
         <li>
-          <span class="tag fixed">Fixed</span>
-          <div>
-            <p class="headline">Military Variables not printing on Paperwork formats</p>
-            <p class="detail">Military Variables 1D and 1E are now printing correctly on Paperwork formats again.</p>
-          </div>
+          <p class="headline">Military Variables not printing on Paperwork formats <span class="tag fixed">Fixed</span></p>
+          <p class="detail">Military Variables 1D and 1E are now printing correctly on Paperwork formats again.</p>
         </li>
       </ul>
     </section>
 
-    <section class="group">
+    <section class="group" id="accounts-payable">
       <h2>
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="12" height="16" rx="2"/><path d="M6 9h6M6 13h4"/><path d="M15 12h6m0 0-3-3m3 3-3 3"/></svg>
         Accounts Payable
       </h2>
       <ul class="items">
         <li>
-          <span class="tag fixed">Fixed</span>
-          <div>
-            <p class="headline">A check could be voided twice</p>
-            <p class="detail">Voiding an already-voided check is no longer possible.</p>
-          </div>
+          <p class="headline">A check could be voided twice <span class="tag fixed">Fixed</span></p>
+          <p class="detail">Voiding an already-voided check is no longer possible.</p>
         </li>
         <li>
-          <span class="tag fixed">Fixed</span>
-          <div>
-            <p class="headline">Print Checks posting to the wrong GL account</p>
-            <p class="detail">In certain situations, Print Checks could post to an incorrect GL account. This is now corrected.</p>
-          </div>
+          <p class="headline">Print Checks posting to the wrong GL account <span class="tag fixed">Fixed</span></p>
+          <p class="detail">In certain situations, Print Checks could post to an incorrect GL account. This is now corrected.</p>
         </li>
         <li>
-          <span class="tag improved">Improved</span>
-          <div>
-            <p class="headline">Clearer guidance on the Reclassify as Manual Check screen</p>
-            <p class="detail">Added on-screen text explaining what this action does, so it's clearer what to expect before confirming.</p>
-          </div>
+          <p class="headline">Clearer guidance on the Reclassify as Manual Check screen <span class="tag improved">Improved</span></p>
+          <p class="detail">Added on-screen text explaining what this action does, so it's clearer what to expect before confirming.</p>
         </li>
       </ul>
     </section>
 
-    <section class="group">
+    <section class="group" id="dispatch">
       <h2>
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 16V7a1 1 0 0 1 1-1h9v10"/><path d="M13 10h4l3 3v3h-2"/><circle cx="7" cy="17" r="1.8"/><circle cx="17" cy="17" r="1.8"/><path d="M9 17h6"/></svg>
         Dispatch
       </h2>
       <ul class="items">
         <li>
-          <span class="tag fixed">Fixed</span>
-          <div>
-            <p class="headline">Invoices created with a blank invoice number</p>
-            <p class="detail">Invoices transferred from Dispatch billing could occasionally end up with no invoice number assigned, which meant they wouldn't appear on the Invoices tab in Accounts Receivable even though the billing itself had gone through correctly. A valid invoice number is now always assigned.</p>
-          </div>
+          <p class="headline">Invoices created with a blank invoice number <span class="tag fixed">Fixed</span></p>
+          <p class="detail">Invoices transferred from Dispatch billing could occasionally end up with no invoice number assigned, which meant they wouldn't appear on the Invoices tab in Accounts Receivable even though the billing itself had gone through correctly. A valid invoice number is now always assigned.</p>
         </li>
         <li>
-          <span class="tag fixed">Fixed</span>
-          <div>
-            <p class="headline">Crash opening Shipment Management</p>
-            <p class="detail">Opening Shipment Management from Dispatch could crash the application entirely, requiring a restart and re-adding shortcuts. This is now resolved.</p>
-          </div>
+          <p class="headline">Crash opening Shipment Management <span class="tag fixed">Fixed</span></p>
+          <p class="detail">Opening Shipment Management from Dispatch could crash the application entirely, requiring a restart and re-adding shortcuts. This is now resolved.</p>
         </li>
         <li>
-          <span class="tag improved">Improved</span>
-          <div>
-            <p class="headline">More reliable Shipment Management job list</p>
-            <p class="detail">Jobs that had already been resolved could keep lingering in the "needs attention" list. Resolved jobs now drop off the list as expected, and each remaining job shows one clear, accurate reason it still needs review.</p>
-          </div>
+          <p class="headline">More reliable Shipment Management job list <span class="tag improved">Improved</span></p>
+          <p class="detail">Jobs that had already been resolved could keep lingering in the "needs attention" list. Resolved jobs now drop off the list as expected, and each remaining job shows one clear, accurate reason it still needs review.</p>
         </li>
       </ul>
     </section>
 
-    <section class="group">
+    <section class="group" id="general-ledger">
       <h2>
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6c-1.5-1-4-1.3-6-1v13c2 0 4.5.3 6 1.3 1.5-1 4-1.3 6-1.3V5c-2-.3-4.5 0-6 1Z"/><path d="M12 6v13"/><path d="M7 9h3M7 12h3M14 9h3M14 12h3"/></svg>
         General Ledger
       </h2>
       <ul class="items">
         <li>
-          <span class="tag fixed">Fixed</span>
-          <div>
-            <p class="headline">New budget years missing Expense accounts</p>
-            <p class="detail">Preparing a new Budget Year (Actual basis) was skipping Expense accounts entirely, so a newly created budget had no expense figures at all &mdash; only Revenue accounts came through. Expense accounts are now included alongside Revenue accounts.</p>
-          </div>
+          <p class="headline">New budget years missing Expense accounts <span class="tag fixed">Fixed</span></p>
+          <p class="detail">Preparing a new Budget Year (Actual basis) was skipping Expense accounts entirely, so a newly created budget had no expense figures at all &mdash; only Revenue accounts came through. Expense accounts are now included alongside Revenue accounts.</p>
         </li>
       </ul>
     </section>
 
-    <section class="group">
+    <section class="group" id="storage-manager">
       <h2>
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8 12 4l9 4-9 4-9-4Z"/><path d="M3 8v9l9 4 9-4V8"/><path d="M12 12v9"/></svg>
         Storage Manager
       </h2>
       <ul class="items">
         <li>
-          <span class="tag fixed">Fixed</span>
-          <div>
-            <p class="headline">Quarterly billing running a month late</p>
-            <p class="detail">Storage lots set to bill quarterly with a Starting Month of 2, 5, 8, or 11 using Behind accrual were billing a month later than they should have &mdash; and in one case, not billing at all. These lots now bill in the correct month.</p>
-          </div>
+          <p class="headline">Quarterly billing running a month late <span class="tag fixed">Fixed</span></p>
+          <p class="applies-to"><strong>Applies to:</strong> customers using quarterly Storage Manager billing with Behind accrual.</p>
+          <p class="detail">Storage lots set to bill quarterly with a Starting Month of 2, 5, 8, or 11 using Behind accrual were billing a month later than they should have &mdash; and in one case, not billing at all. These lots now bill in the correct month.</p>
         </li>
       </ul>
     </section>
 
-    <section class="group">
+    <section class="group" id="van-line-statement-download">
       <h2>
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="3" width="14" height="14" rx="2"/><path d="M8 7h8M8 10h5"/><path d="M12 21v-6m0 6-3-3m3 3 3-3"/></svg>
         Van Line Statement Download
       </h2>
       <ul class="items">
         <li>
-          <span class="tag fixed">Fixed</span>
-          <div>
-            <p class="headline">Statement preview sort order getting stuck</p>
-            <p class="detail">Once you sorted a column in the statement preview, it would stay sorted that way permanently &mdash; even clicking Reset couldn't bring back the original order. The preview now always opens in the original download order, regardless of any sorting from a previous session.</p>
-          </div>
+          <p class="headline">Statement preview sort order getting stuck <span class="tag fixed">Fixed</span></p>
+          <p class="detail">Once you sorted a column in the statement preview, it would stay sorted that way permanently &mdash; even clicking Reset couldn't bring back the original order. The preview now always opens in the original download order, regardless of any sorting from a previous session.</p>
         </li>
       </ul>
     </section>
 
-    <section class="group">
+    <section class="group" id="reporting">
       <h2>
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10M10 20V4M16 20v-7M20 20H4"/></svg>
         Reporting
       </h2>
       <ul class="items">
         <li>
-          <span class="tag fixed">Fixed</span>
-          <div>
-            <p class="headline">Generated PDFs locked against editing</p>
-            <p class="detail">PDF reports generated from Save As, Email, or automatic PDF creation were coming out encrypted with editing, copying, and form-filling disabled &mdash; even when no password was set. PDFs now generate fully open and editable unless you specifically enter a password when saving.</p>
-          </div>
+          <p class="headline">Generated PDFs locked against editing <span class="tag fixed">Fixed</span></p>
+          <p class="detail">PDF reports generated from Save As, Email, or automatic PDF creation were coming out encrypted with editing, copying, and form-filling disabled &mdash; even when no password was set. PDFs now generate fully open and editable unless you specifically enter a password when saving.</p>
         </li>
         <li>
-          <span class="tag fixed">Fixed</span>
-          <div>
-            <p class="headline">Commissions report filter returning no results</p>
-            <p class="detail">The Agent Master report's posting-type filter wasn't working &mdash; filtering to a specific posting type silently returned no records. This is now corrected.</p>
-          </div>
+          <p class="headline">Commissions report filter returning no results <span class="tag fixed">Fixed</span></p>
+          <p class="detail">The Agent Master report's posting-type filter wasn't working &mdash; filtering to a specific posting type silently returned no records. This is now corrected.</p>
         </li>
       </ul>
     </section>
 
-    <section class="group">
+    <section class="group" id="general">
       <h2>
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 3v2M12 19v2M4.2 7l1.7 1M18 16l1.7 1M4.2 17l1.7-1M18 8l1.7-1M3 12h2M19 12h2"/></svg>
         General
       </h2>
       <ul class="items">
         <li>
-          <span class="tag fixed">Fixed</span>
-          <div>
-            <p class="headline">Ctrl+Tab not switching tabs</p>
-            <p class="detail">Ctrl+Tab wasn't switching between tabs on certain windows. Keyboard tab-switching now works consistently throughout the application.</p>
-          </div>
+          <p class="headline">Ctrl+Tab not switching tabs <span class="tag fixed">Fixed</span></p>
+          <p class="detail">Ctrl+Tab wasn't switching between tabs on certain windows. Keyboard tab-switching now works consistently throughout the application.</p>
         </li>
         <li>
-          <span class="tag improved">Improved</span>
-          <div>
-            <p class="headline">Clear message when your database needs updating</p>
-            <p class="detail">If your database is behind the version Direct10 expects, the application would previously fail to start with no explanation. It now shows a clear message telling you the database needs to be updated, instead of leaving you guessing.</p>
-          </div>
+          <p class="headline">Clear message when your database needs updating <span class="tag improved">Improved</span></p>
+          <p class="detail">If your database is behind the version Direct10 expects, the application would previously fail to start with no explanation. It now shows a clear message telling you the database needs to be updated, instead of leaving you guessing.</p>
         </li>
         <li>
-          <span class="tag fixed">Fixed</span>
-          <div>
-            <p class="headline">Connection failures on newer database drivers</p>
-            <p class="detail">Sites using newer ODBC database drivers combined with a longer database name could fail to connect at all, because the connection string field was too short to hold the full driver and database name together. This is now resolved.</p>
-          </div>
+          <p class="headline">Connection failures on newer database drivers <span class="tag fixed">Fixed</span></p>
+          <p class="detail">Sites using newer ODBC database drivers with longer database names could experience connection failures. This has been corrected.</p>
         </li>
         <li>
-          <span class="tag improved">Improved</span>
-          <div>
-            <p class="headline">Ongoing data-handling and logging hardening</p>
-            <p class="detail">Continued behind-the-scenes work to reduce what sensitive information gets written to diagnostic logs. No action needed on your part.</p>
-          </div>
+          <p class="headline">Improved protection of sensitive information in diagnostic logs <span class="tag improved">Improved</span></p>
+          <p class="detail">We've continued to reduce the amount of potentially sensitive information written to diagnostic logs. No action is required.</p>
         </li>
         <li>
-          <span class="tag improved">Improved</span>
-          <div>
-            <p class="headline">Updated remote-support link</p>
-            <p class="detail">The Help menu's remote-support link now points to our current support tool, replacing the retired link that no longer worked.</p>
-          </div>
+          <p class="headline">Updated remote-support link <span class="tag improved">Improved</span></p>
+          <p class="detail">The Help menu's remote-support link now points to our current support tool, replacing the retired link that no longer worked.</p>
         </li>
       </ul>
     </section>
