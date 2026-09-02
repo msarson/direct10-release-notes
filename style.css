@@ -180,6 +180,23 @@ h1 {
   margin-left: 0;
 }
 
+.summary-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.summary-pills .pill {
+  font-size: 0.82rem;
+  font-weight: 700;
+  padding: 5px 13px;
+  border-radius: 999px;
+}
+
+.summary-pills .pill.fixed { background: var(--fixed-soft); color: var(--fixed); }
+.summary-pills .pill.improved { background: var(--improved-soft); color: var(--improved); }
+
 .highlights {
   background: var(--accent-soft);
   border: 1px solid var(--border);
