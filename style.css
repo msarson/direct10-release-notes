@@ -251,12 +251,14 @@ section.group h2 svg {
 }
 
 .tag {
-  flex: 0 0 auto;
+  flex: 0 0 74px;
+  width: 74px;
+  text-align: center;
   font-size: 0.68rem;
   font-weight: 700;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  padding: 3px 8px;
+  padding: 3px 4px;
   border-radius: 6px;
   margin-top: 2px;
 }
