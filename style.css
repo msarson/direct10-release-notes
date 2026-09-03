@@ -174,10 +174,19 @@ h1 {
 
 .version-panel .version-status {
   margin-top: 6px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 
 .version-panel .version-status .status-badge {
   margin-left: 0;
+}
+
+.version-panel .version-date {
+  color: var(--text-muted);
+  font-size: 0.9rem;
 }
 
 .summary-pills {
