@@ -18,7 +18,6 @@
         <h3>Releases</h3>
         <ul>
           <li><a href="2026.3.005.html" class="current">2026.3.005</a></li>
-          <li><a href="2026.4.001.html">2026.4.001</a></li>
           <li><a href="2026.3.004.html">2026.3.004</a></li>
           <li><a href="before-2026.3.004.html">Before 2026.3.004</a></li>
         </ul>
@@ -32,7 +31,7 @@
     </div>
 
     <div class="summary-pills">
-      <span class="pill fixed">3 Fixed</span>
+      <span class="pill fixed">5 Fixed</span>
     </div>
 
     <div class="highlights">
@@ -41,7 +40,8 @@
     </div>
 
     <nav class="section-nav">
-      <a href="#commercial-records-storage">Commercial Records Storage</a>
+      <a href="#commercial-records-storage">Commercial Records Storage</a><span class="sep">·</span>
+      <a href="#general">General</a>
     </nav>
 
     <h2 class="all-changes-heading">All changes in 2026.3.005</h2>
@@ -65,6 +65,25 @@
         <li>
           <p class="headline">Pro-Forma Monthly Billing window showed the wrong title <span class="tag fixed">Fixed</span></p>
           <p class="detail">The Pro-Forma Monthly Billing window displayed "Calculate Monthly Storage Billing" instead of reflecting Pro-Forma. It now shows the correct title.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="group" id="general">
+      <h2>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 3v2M12 19v2M4.2 7l1.7 1M18 16l1.7 1M4.2 17l1.7-1M18 8l1.7-1M3 12h2M19 12h2"/></svg>
+        General
+      </h2>
+      <ul class="items">
+        <li>
+          <p class="headline">Deleted datasets could reappear in the Database Install/Upgrade tool <span class="tag fixed">Fixed</span></p>
+          <p class="applies-to"><strong>Applies to:</strong> the Direct Systems Database Install, Clone and Upgrade Wizard.</p>
+          <p class="detail">Deleting a dataset from the list didn't always remove its settings, so the dataset could come back the next time the tool was opened even though it appeared to have been deleted. This is now corrected.</p>
+        </li>
+        <li>
+          <p class="headline">Renaming a dataset could overwrite its database connection details <span class="tag fixed">Fixed</span></p>
+          <p class="applies-to"><strong>Applies to:</strong> the Direct Systems Database Install, Clone and Upgrade Wizard.</p>
+          <p class="detail">Changing a dataset's display name could, in some cases, overwrite the actual database name used to connect to it. Renaming a dataset now only changes its display name.</p>
         </li>
       </ul>
     </section>
