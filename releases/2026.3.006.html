@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Direct10 2026.3.006 Release Notes</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <div class="wrap with-sidebar">
+    <header class="site">
+      <a class="brand" href="../index.html">Direct<span>10</span> Release Notes</a>
+      <nav><a href="../index.html">All releases</a></nav>
+    </header>
+
+    <div class="layout">
+      <aside class="sidebar">
+        <h3>Releases</h3>
+        <ul>
+          <li><a href="2026.4.001.html">2026.4.001</a></li>
+          <li><a href="2026.3.006.html" class="current">2026.3.006</a></li>
+          <li><a href="2026.3.005.html">2026.3.005</a></li>
+          <li><a href="2026.3.004.html">2026.3.004</a></li>
+          <li><a href="before-2026.3.004.html">Before 2026.3.004</a></li>
+        </ul>
+      </aside>
+
+      <div class="main-content">
+
+    <div class="version-panel">
+      <div class="version-name">Direct10 2026.3.006</div>
+      <div class="version-status"><span class="version-date">In development</span></div>
+    </div>
+
+    <div class="summary-pills">
+      <span class="pill fixed">4 Fixed</span>
+    </div>
+
+    <div class="highlights">
+      <h2>What you should know about 2026.3.006</h2>
+      <p>This release is still in development. This page will be updated as changes are added.</p>
+    </div>
+
+    <nav class="section-nav">
+      <a href="#commercial-records-storage">Commercial Records Storage</a>
+    </nav>
+
+    <h2 class="all-changes-heading">All changes in 2026.3.006</h2>
+
+    <section class="group" id="commercial-records-storage">
+      <h2>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="8" width="16" height="12" rx="1.5"/><path d="M4 8V6a1 1 0 0 1 1-1h5l2 2h7a1 1 0 0 1 1 1v0"/></svg>
+        Commercial Records Storage
+      </h2>
+      <ul class="items">
+        <li>
+          <p class="headline">Storage invoice printing could include invoices from another company <span class="tag fixed">Fixed</span></p>
+          <p class="applies-to"><strong>Applies to:</strong> all Commercial Records Storage customers printing or emailing storage invoices.</p>
+          <p class="detail">When printing storage invoices, the report was not limited to the company you were working in, so invoices belonging to another company could appear in the printed output. This affected both the standard and custom invoice formats, and could also occur when printing or emailing a single invoice, because invoice numbers are only unique within a company. Invoice printing is now correctly limited to the company you are working in.</p>
+        </li>
+        <li>
+          <p class="headline">Custom-format invoices could not be emailed <span class="tag fixed">Fixed</span></p>
+          <p class="applies-to"><strong>Applies to:</strong> Commercial Records Storage customers using a custom invoice format.</p>
+          <p class="detail">Individual invoice PDFs were never produced for custom invoice formats, so there was no invoice to attach and emailing could not complete. Each invoice to be emailed now has its PDF created as expected.</p>
+        </li>
+        <li>
+          <p class="headline">Invoice emails could go to the wrong recipients <span class="tag fixed">Fixed</span></p>
+          <p class="applies-to"><strong>Applies to:</strong> Commercial Records Storage customers emailing custom-format invoices.</p>
+          <p class="detail">When emailing custom-format invoices, the first invoice in a batch could pick up email addresses set up for other modules rather than only those marked for Commercial Records billing, and customer details for the invoice were not always read correctly. Email recipients are now matched to the correct customer and to Commercial Records billing addresses only.</p>
+        </li>
+        <li>
+          <p class="headline">PDFs were created for invoices that could not be emailed <span class="tag fixed">Fixed</span></p>
+          <p class="applies-to"><strong>Applies to:</strong> Commercial Records Storage customers emailing invoices.</p>
+          <p class="detail">Invoice PDFs were generated for every invoice in a batch, including customers with no email address on file, leaving files that were never sent. PDFs are now only created for invoices that are actually going to be emailed.</p>
+        </li>
+      </ul>
+    </section>
+
+    <footer class="site">
+      Direct Systems, Inc. &mdash; questions about a release? Contact your support representative.
+    </footer>
+
+      </div>
+    </div>
+  </div>
+</body>
+</html>
