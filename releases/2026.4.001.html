@@ -29,13 +29,42 @@
 
     <div class="version-panel">
       <div class="version-name">Direct10 2026.4.001</div>
-      <div class="version-status"><span class="version-date">In development</span></div>
+      <div class="version-status"><span class="version-date">Release date: October 26, 2026</span></div>
+    </div>
+
+    <div class="summary-pills">
+      <span class="pill fixed">2 Fixed</span>
     </div>
 
     <div class="highlights">
       <h2>What you should know about 2026.4.001</h2>
-      <p>This release is still in development. This page will be updated as changes are added.</p>
+      <p>2026.4.001 corrects an invoice printing problem where a charge description that begins with a space was printed in the wrong place and cut short, with part of the invoice form itself showing through in its place. It also corrects the way sales agent and driver numbers are printed on invoice and statement forms.</p>
     </div>
+
+    <nav class="section-nav">
+      <a href="#accounts-receivable">Accounts Receivable</a>
+    </nav>
+
+    <h2 class="all-changes-heading">All changes in 2026.4.001</h2>
+
+    <section class="group" id="accounts-receivable">
+      <h2>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="4" width="12" height="16" rx="2"/><path d="M12 9h6M12 13h4"/><path d="M9 12H3m0 0 3-3m-3 3 3 3"/></svg>
+        Accounts Receivable
+      </h2>
+      <ul class="items">
+        <li>
+          <p class="headline">Charge descriptions beginning with a space printed in the wrong place and cut short <span class="tag fixed">Fixed</span></p>
+          <p class="applies-to"><strong>Applies to:</strong> customers printing or emailing invoices where a charge description begins with a space. This includes descriptions typed with leading spaces to indent a continuation line, and descriptions that come from a billing code whose description begins with a space.</p>
+          <p class="detail">When a charge description began with a space, the invoice form treated it as a number rather than as text. The description was shortened to its last few characters and pushed to the right-hand end of the description column, and part of the invoice form's own layout was left showing where the description should have started. Descriptions are now printed as text in every case: they begin at the left of the description column, keep any spacing you have typed, and use the full width the column allows. Charge amounts, units, rates and other figures continue to line up on the right as before.</p>
+        </li>
+        <li>
+          <p class="headline">Sales agent and driver numbers printed using a date format <span class="tag fixed">Fixed</span></p>
+          <p class="applies-to"><strong>Applies to:</strong> any site whose invoice or statement form shows the sales agent number or driver number. Storage Manager forms are affected as well as Accounts Receivable forms.</p>
+          <p class="detail">The sales agent number and driver number were formatted using a date layout instead of a number layout, so they could print incorrectly on forms that include them. Both now print as plain numbers. If your forms show either of these fields, the printed result will change with this release.</p>
+        </li>
+      </ul>
+    </section>
 
     <footer class="site">
       Direct Systems, Inc. &mdash; questions about a release? Contact your support representative.
