@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Direct10 2026.4.002 Release Notes</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <div class="wrap with-sidebar">
+    <header class="site">
+      <a class="brand" href="../index.html">Direct<span>10</span> Release Notes</a>
+      <nav><a href="../index.html">All releases</a></nav>
+    </header>
+
+    <div class="layout">
+      <aside class="sidebar">
+        <h3>Releases</h3>
+        <ul>
+          <li><a href="2026.4.002.html" class="current">2026.4.002</a></li>
+          <li><a href="2026.4.001.html">2026.4.001</a></li>
+          <li><a href="2026.3.006.html">2026.3.006</a></li>
+          <li><a href="2026.3.005.html">2026.3.005</a></li>
+          <li><a href="2026.3.004.html">2026.3.004</a></li>
+          <li><a href="before-2026.3.004.html">Before 2026.3.004</a></li>
+        </ul>
+      </aside>
+
+      <div class="main-content">
+
+    <div class="version-panel">
+      <div class="version-name">Direct10 2026.4.002</div>
+      <div class="version-status"><span class="version-date">In development</span></div>
+    </div>
+
+    <div class="summary-pills">
+      <span class="pill fixed">1 Fixed</span>
+    </div>
+
+    <div class="highlights">
+      <h2>What you should know about 2026.4.002</h2>
+      <p>2026.4.002 corrects a problem in the Database Install, Clone and Upgrade Wizard where a new data set could not be saved on a system that did not yet have any data sets, such as a new installation.</p>
+    </div>
+
+    <nav class="section-nav">
+      <a href="#general">General</a>
+    </nav>
+
+    <h2 class="all-changes-heading">All changes in 2026.4.002</h2>
+
+    <section class="group" id="general">
+      <h2>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 3v2M12 19v2M4.2 7l1.7 1M18 16l1.7 1M4.2 17l1.7-1M18 8l1.7-1M3 12h2M19 12h2"/></svg>
+        General
+      </h2>
+      <ul class="items">
+        <li>
+          <p class="headline">New data set could not be saved when no data sets existed yet <span class="tag fixed">Fixed</span></p>
+          <p class="applies-to"><strong>Applies to:</strong> anyone adding the first data set in the Database Install, Clone and Upgrade Wizard (SQLInstallAndUpgrade), for example on a new installation or a new server.</p>
+          <p class="detail">When no data sets existed yet, the Data Set ID on the new data set form was left blank and could not be entered, so pressing OK refused to save because the ID was missing. The first data set is now given ID 1 automatically. Adding a second data set in the same session also now gets the next ID, instead of reusing the one just created. Systems that already have data sets are not affected.</p>
+        </li>
+      </ul>
+    </section>
+
+    <footer class="site">
+      Direct Systems, Inc. &mdash; questions about a release? Contact your support representative.
+    </footer>
+
+      </div>
+    </div>
+  </div>
+</body>
+</html>
