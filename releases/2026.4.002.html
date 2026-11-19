@@ -34,19 +34,60 @@
     </div>
 
     <div class="summary-pills">
-      <span class="pill fixed">1 Fixed</span>
+      <span class="pill fixed">4 Fixed</span>
+      <span class="pill improved">2 Improved</span>
     </div>
 
     <div class="highlights">
       <h2>What you should know about 2026.4.002</h2>
-      <p>2026.4.002 corrects a problem in the Database Install, Clone and Upgrade Wizard where a new data set could not be saved on a system that did not yet have any data sets, such as a new installation.</p>
+      <p>2026.4.002 makes Print Paychecks explain exactly what to correct when payroll hours are posted to a month that is already closed in the General Ledger, instead of reporting that there were no records to process. Users marked as inactive can no longer sign in. It also stops Payroll and MoverBiz from overwriting whatever you had copied to the clipboard, and corrects a problem saving the first data set on a new installation.</p>
     </div>
 
     <nav class="section-nav">
+      <a href="#payroll">Payroll</a>
+      <a href="#dispatch">Dispatch</a>
       <a href="#general">General</a>
     </nav>
 
     <h2 class="all-changes-heading">All changes in 2026.4.002</h2>
+
+    <section class="group" id="payroll">
+      <h2>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M9.5 9.2c0-1.1 1.1-2 2.5-2s2.5.9 2.5 2-1.1 1.7-2.5 2-2.5.9-2.5 2 1.1 2 2.5 2 2.5-.9 2.5-2"/><path d="M12 6v1.2M12 16.8V18"/></svg>
+        Payroll
+      </h2>
+      <ul class="items">
+        <li>
+          <p class="headline">Print Paychecks said there were no records to process when hours were in a closed month <span class="tag fixed">Fixed</span></p>
+          <p class="applies-to"><strong>Applies to:</strong> anyone calculating paychecks (Transactions &gt; Print Paychecks).</p>
+          <p class="detail">Each line of payroll hours carries its own Posting Month/Year. If a line was posted to a month that is already closed in the General Ledger, Calculate Paychecks could stop with &ldquo;There were no records to process&rdquo;, even though the hours were plainly there in the Standard Database. It now tells you which employee has hours in a closed month, which month that is, the month the General Ledger is closed through, and to correct the Posting Month/Year in Edit Hours Database. To find the lines involved, use Print Detail on the Database Summary screen and check the &ldquo;Post&rdquo; column.</p>
+        </li>
+        <li>
+          <p class="headline">Print Paychecks replaced whatever you had copied to the clipboard <span class="tag fixed">Fixed</span></p>
+          <p class="applies-to"><strong>Applies to:</strong> anyone using Transactions &gt; Print Paychecks.</p>
+          <p class="detail">Viewing calculated paychecks copied a technical query to the Windows clipboard, replacing anything you had copied. It no longer touches the clipboard.</p>
+        </li>
+        <li>
+          <p class="headline">E-File W2 Forms menu item removed <span class="tag improved">Improved</span></p>
+          <p class="applies-to"><strong>Applies to:</strong> Payroll users.</p>
+          <p class="detail">Reports &gt; Yearly Reports &gt; W2 Forms &gt; E-File W2 Forms only ever showed a &ldquo;coming soon&rdquo; message, so it has been removed. Printing W2 forms is unchanged.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="group" id="dispatch">
+      <h2>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 16V7a1 1 0 0 1 1-1h9v10"/><path d="M13 10h4l3 3v3h-2"/><circle cx="7" cy="17" r="1.8"/><circle cx="17" cy="17" r="1.8"/><path d="M9 17h6"/></svg>
+        Dispatch
+      </h2>
+      <ul class="items">
+        <li>
+          <p class="headline">Opening MoverBiz replaced whatever you had copied to the clipboard <span class="tag fixed">Fixed</span></p>
+          <p class="applies-to"><strong>Applies to:</strong> anyone opening MoverBiz screens from Direct10.</p>
+          <p class="detail">Opening a MoverBiz screen copied its technical start-up details to the Windows clipboard, replacing anything you had copied. It no longer touches the clipboard.</p>
+        </li>
+      </ul>
+    </section>
 
     <section class="group" id="general">
       <h2>
@@ -58,6 +99,11 @@
           <p class="headline">New data set could not be saved when no data sets existed yet <span class="tag fixed">Fixed</span></p>
           <p class="applies-to"><strong>Applies to:</strong> anyone adding the first data set in the Database Install, Clone and Upgrade Wizard (SQLInstallAndUpgrade), for example on a new installation or a new server.</p>
           <p class="detail">When no data sets existed yet, the Data Set ID on the new data set form was left blank and could not be entered, so pressing OK refused to save because the ID was missing. The first data set is now given ID 1 automatically. Adding a second data set in the same session also now gets the next ID, instead of reusing the one just created. Systems that already have data sets are not affected.</p>
+        </li>
+        <li>
+          <p class="headline">Inactive users can no longer sign in <span class="tag improved">Improved</span></p>
+          <p class="applies-to"><strong>Applies to:</strong> everyone signing in to Direct10.</p>
+          <p class="detail">A user whose account is marked inactive could still sign in. Inactive users are now refused at sign-in, with the same message as an unknown user ID. To let someone back in, mark their user as active again.</p>
         </li>
       </ul>
     </section>
