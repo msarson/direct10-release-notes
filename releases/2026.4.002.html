@@ -34,13 +34,14 @@
     </div>
 
     <div class="summary-pills">
-      <span class="pill fixed">4 Fixed</span>
-      <span class="pill improved">2 Improved</span>
+      <span class="pill fixed">17 Fixed</span>
+      <span class="pill improved">11 Improved</span>
     </div>
 
     <div class="highlights">
       <h2>What you should know about 2026.4.002</h2>
-      <p>2026.4.002 makes Print Paychecks explain exactly what to correct when payroll hours are posted to a month that is already closed in the General Ledger, instead of reporting that there were no records to process. Users marked as inactive can no longer sign in. It also stops Payroll and MoverBiz from overwriting whatever you had copied to the clipboard, and corrects a problem saving the first data set on a new installation.</p>
+      <p>2026.4.002 gives MoverBiz a new look with a choice of themes, including a Dark Mode, and dates that follow your Windows region. In the Trip Planner the jobs list works again, and drivers are now chosen from a list for each company instead of typed as a number. It also fixes a range of MoverBiz problems in the Load Board, reports, standard letters and the tariff interface.</p>
+      <p>2026.4.002 also makes Print Paychecks explain exactly what to correct when payroll hours are posted to a month that is already closed in the General Ledger, instead of reporting that there were no records to process. Users marked as inactive can no longer sign in. It also stops Payroll and MoverBiz from overwriting whatever you had copied to the clipboard, and corrects a problem saving the first data set on a new installation.</p>
     </div>
 
     <nav class="section-nav">
@@ -81,6 +82,116 @@
         Dispatch
       </h2>
       <ul class="items">
+        <li>
+          <p class="headline">A new look for MoverBiz, with a choice of themes <span class="tag improved">Improved</span></p>
+          <p class="applies-to"><strong>Applies to:</strong> everyone using MoverBiz.</p>
+          <p class="detail">MoverBiz has a refreshed, more modern look. You can now choose a theme on the Home tab under Appearance &gt; Theme: Microsoft 365 Blue, Silver, White or Black, a Dark Mode, Office 2013 White, Office 2010 Blue or Silver, or your Windows colors. Your choice is remembered for your Windows user. The ribbon now sits in the window&rsquo;s title bar, and text, grids and disabled items stay readable in every theme. Images, Letters and Job Listings opened from Direct10 keep the standard blue look. The ribbon no longer has an Exit button; close MoverBiz with the window&rsquo;s close button, as before.</p>
+        </li>
+        <li>
+          <p class="headline">MoverBiz buttons use the same icons as Direct10 <span class="tag improved">Improved</span></p>
+          <p class="applies-to"><strong>Applies to:</strong> everyone using MoverBiz.</p>
+          <p class="detail">OK, Cancel, Save, Add, Help and the other standard buttons now show the same icons you see in the rest of Direct10.</p>
+        </li>
+        <li>
+          <p class="headline">Dates and times in MoverBiz follow your Windows region <span class="tag improved">Improved</span></p>
+          <p class="applies-to"><strong>Applies to:</strong> MoverBiz users whose Windows region is not United States, for example the United Kingdom.</p>
+          <p class="detail">Date and time boxes always showed month/day/year and a 12-hour clock. They now use the date and time format set in Windows, so a UK PC shows day/month/year and a 24-hour clock. US PCs look the same as before. Searches and filters by date give the same results whatever the region.</p>
+        </li>
+        <li>
+          <p class="headline">Assign Driver: choose the driver from a list instead of typing a number <span class="tag improved">Improved</span></p>
+          <p class="applies-to"><strong>Applies to:</strong> anyone assigning drivers in the MoverBiz Trip Planner.</p>
+          <p class="detail">Assign Driver used to ask for a driver number, and applied that one number to every job on the trip, even jobs in another company where the number belongs to someone else. Driver numbers belong to each company, so Assign Driver now shows a list for each company on the trip, holding that company&rsquo;s active commission agents by number and name. Choosing a driver for one company fills in the other companies where the same person has a number. OK assigns the drivers to the trip&rsquo;s jobs and closes. Opening Assign Driver again shows the drivers the jobs already have.</p>
+        </li>
+        <li>
+          <p class="headline">Edit Trip shows the trip&rsquo;s driver by name <span class="tag improved">Improved</span></p>
+          <p class="applies-to"><strong>Applies to:</strong> anyone editing trips in the MoverBiz Trip Planner.</p>
+          <p class="detail">The Driver box on Edit Trip was a number you typed. It now shows the driver the trip&rsquo;s jobs have, by number and name, or tells you when the jobs have no driver or different drivers. To change it, use the Assign Driver button beside it.</p>
+        </li>
+        <li>
+          <p class="headline">Trip Planner is clearer about what you can do <span class="tag improved">Improved</span></p>
+          <p class="applies-to"><strong>Applies to:</strong> anyone using the MoverBiz Trip Planner.</p>
+          <p class="detail">The list at the top is now headed &ldquo;Jobs not on a trip&rdquo;: drag a job from it onto the trip below to add it. Assign Driver, Export Trip to CSV and Print Trip Planner are unavailable until the trip has at least one job.</p>
+        </li>
+        <li>
+          <p class="headline">Required fields and entry mistakes are easier to see <span class="tag improved">Improved</span></p>
+          <p class="applies-to"><strong>Applies to:</strong> everyone entering information in MoverBiz.</p>
+          <p class="detail">Required fields are marked, and when something can&rsquo;t be saved MoverBiz now lists what needs correcting and highlights the fields involved, instead of failing quietly. Several messages with misspellings or the wrong wording have been corrected.</p>
+        </li>
+        <li>
+          <p class="headline">New IBS Support Portal button and help links <span class="tag improved">Improved</span></p>
+          <p class="applies-to"><strong>Applies to:</strong> everyone using MoverBiz.</p>
+          <p class="detail">On the Support tab, the Bomgar Portal button is replaced by IBS Support Portal, which opens the Splashtop SOS download page for remote support sessions. Help links now open the new online help.</p>
+        </li>
+        <li>
+          <p class="headline">Security improvements in MoverBiz <span class="tag improved">Improved</span></p>
+          <p class="applies-to"><strong>Applies to:</strong> everyone using MoverBiz.</p>
+          <p class="detail">MoverBiz is now stricter about the files, folders and links it will open, and keeps technical connection details out of its messages.</p>
+        </li>
+        <li>
+          <p class="headline">Trip Planner showed no jobs to plan <span class="tag fixed">Fixed</span></p>
+          <p class="applies-to"><strong>Applies to:</strong> anyone using the MoverBiz Trip Planner.</p>
+          <p class="detail">The list of jobs available for a trip was always empty, so jobs could not be added to trips. It now lists the active jobs that are not on a trip, narrowed by the filter on the left.</p>
+        </li>
+        <li>
+          <p class="headline">Opening a shipment from MoverBiz used the wrong data set <span class="tag fixed">Fixed</span></p>
+          <p class="applies-to"><strong>Applies to:</strong> sites with more than one data set.</p>
+          <p class="detail">A shipment opened from MoverBiz opened in the default data set instead of the one you were working in. It now opens in your current data set.</p>
+        </li>
+        <li>
+          <p class="headline">An edited standard letter could not be saved <span class="tag fixed">Fixed</span></p>
+          <p class="applies-to"><strong>Applies to:</strong> anyone editing standard letters in MoverBiz.</p>
+          <p class="detail">Saving changes to a standard letter always failed. It now saves.</p>
+        </li>
+        <li>
+          <p class="headline">Load Board assignments: available resources list was empty <span class="tag fixed">Fixed</span></p>
+          <p class="applies-to"><strong>Applies to:</strong> anyone assigning crews and equipment on the MoverBiz Load Board.</p>
+          <p class="detail">The list of available resources never filled in. It now shows the resources available for the work ticket&rsquo;s dates. The check for double-booked resources also now takes the type of resource into account, so an employee and a vehicle that share a number are no longer reported as a conflict.</p>
+        </li>
+        <li>
+          <p class="headline">Load Board: date error stayed after the dates were reset <span class="tag fixed">Fixed</span></p>
+          <p class="applies-to"><strong>Applies to:</strong> anyone choosing From and To dates on the MoverBiz Load Board, for example in View &gt; Reports &gt; Selected Work Tickets.</p>
+          <p class="detail">When the From date was after the To date, both dates went back to their previous values, but the From date kept its error mark until you clicked Set Dates again. The mark now clears with the reset.</p>
+        </li>
+        <li>
+          <p class="headline">Work Type Colors added duplicate rows <span class="tag fixed">Fixed</span></p>
+          <p class="applies-to"><strong>Applies to:</strong> anyone setting work type colors in MoverBiz.</p>
+          <p class="detail">Work types that do not belong to a company got a new duplicate color row each time the Work Type Colors window was opened and saved. They now keep their existing row.</p>
+        </li>
+        <li>
+          <p class="headline">Cancelling a job clone showed an error <span class="tag fixed">Fixed</span></p>
+          <p class="applies-to"><strong>Applies to:</strong> anyone cloning jobs in MoverBiz.</p>
+          <p class="detail">Cancelling a job clone, or a clone that failed, showed an error message and left the window open. It now closes cleanly.</p>
+        </li>
+        <li>
+          <p class="headline">Cancelling the File Extensions or File Actions windows reloaded the list <span class="tag fixed">Fixed</span></p>
+          <p class="applies-to"><strong>Applies to:</strong> anyone maintaining file extensions or file actions in MoverBiz.</p>
+          <p class="detail">Pressing Cancel still reloaded the list behind it, losing your place. Cancel now leaves the list as it was.</p>
+        </li>
+        <li>
+          <p class="headline">MoverBiz reports said there were no matching records when they could not load <span class="tag fixed">Fixed</span></p>
+          <p class="applies-to"><strong>Applies to:</strong> anyone running MoverBiz reports.</p>
+          <p class="detail">If a report could not read its data, for example because of a connection or permission problem, it showed an empty result as if nothing matched. It now says the report could not be loaded. Reports also load more reliably while you change their options.</p>
+        </li>
+        <li>
+          <p class="headline">An apostrophe in a report filter stopped the report <span class="tag fixed">Fixed</span></p>
+          <p class="applies-to"><strong>Applies to:</strong> anyone filtering MoverBiz reports and boards by text.</p>
+          <p class="detail">Filtering by a value containing an apostrophe, such as a name like O&rsquo;Brien, gave an error. These values now filter correctly.</p>
+        </li>
+        <li>
+          <p class="headline">Tariff interface: the Interstate option imported intrastate jobs <span class="tag fixed">Fixed</span></p>
+          <p class="applies-to"><strong>Applies to:</strong> anyone importing jobs through the tariff interface (QuickMove).</p>
+          <p class="detail">Choosing Interstate looked up and imported intrastate jobs. It now imports interstate jobs.</p>
+        </li>
+        <li>
+          <p class="headline">Tariff interface: sign-in and start-up errors <span class="tag fixed">Fixed</span></p>
+          <p class="applies-to"><strong>Applies to:</strong> anyone using the tariff interface (QuickMove).</p>
+          <p class="detail">Signing in with the &ldquo;own credentials&rdquo; option failed. The configuration and import windows could also stop with an error when a lookup list was empty, a licence key or default settings were missing, or a transfer number was blank. These now work, or explain what is missing.</p>
+        </li>
+        <li>
+          <p class="headline">XML export left out military details <span class="tag fixed">Fixed</span></p>
+          <p class="applies-to"><strong>Applies to:</strong> anyone exporting military shipments to XML.</p>
+          <p class="detail">When one of a military shipment&rsquo;s number fields was blank, the export left out all of its military details. They are now exported, with the blank field left empty.</p>
+        </li>
         <li>
           <p class="headline">Opening MoverBiz replaced whatever you had copied to the clipboard <span class="tag fixed">Fixed</span></p>
           <p class="applies-to"><strong>Applies to:</strong> anyone opening MoverBiz screens from Direct10.</p>
