@@ -34,14 +34,14 @@
     </div>
 
     <div class="summary-pills">
-      <span class="pill fixed">24 Fixed</span>
+      <span class="pill fixed">25 Fixed</span>
       <span class="pill improved">11 Improved</span>
     </div>
 
     <div class="highlights">
       <h2>What you should know about 2026.4.002</h2>
       <p>2026.4.002 gives MoverBiz a new look with a choice of themes, including a Dark Mode, and dates that follow your Windows region. In the Trip Planner the jobs list works again, and drivers are now chosen from a list for each company instead of typed as a number. It also fixes a range of MoverBiz problems in the Load Board, reports, standard letters and the tariff interface.</p>
-      <p>2026.4.002 also makes Print Paychecks explain exactly what to correct when payroll hours are posted to a month that is already closed in the General Ledger, instead of reporting that there were no records to process. Commercial Records invoices now print each customer&rsquo;s own city, state and ZIP code, and custom-format invoices no longer show a &ldquo;BIND has not been called&rdquo; error. Users marked as inactive can no longer sign in. It also stops Payroll and MoverBiz from overwriting whatever you had copied to the clipboard, and corrects a problem saving the first data set on a new installation.</p>
+      <p>2026.4.002 also makes Print Paychecks explain exactly what to correct when payroll hours are posted to a month that is already closed in the General Ledger, instead of reporting that there were no records to process. Commercial Records invoices now print each customer&rsquo;s own city, state and ZIP code, and custom-format invoices no longer show a &ldquo;BIND has not been called&rdquo; error. Reports in several modules that could repeat a value from an earlier line now show each line&rsquo;s own value. Users marked as inactive can no longer sign in. It also stops Payroll and MoverBiz from overwriting whatever you had copied to the clipboard, and corrects a problem saving the first data set on a new installation.</p>
     </div>
 
     <nav class="section-nav">
@@ -260,6 +260,11 @@
           <p class="headline">Inactive users can no longer sign in <span class="tag improved">Improved</span></p>
           <p class="applies-to"><strong>Applies to:</strong> everyone signing in to Direct10.</p>
           <p class="detail">A user whose account is marked inactive could still sign in. Inactive users are now refused at sign-in, with the same message as an unknown user ID. To let someone back in, mark their user as active again.</p>
+        </li>
+        <li>
+          <p class="headline">Some reports showed a value from another record <span class="tag fixed">Fixed</span></p>
+          <p class="applies-to"><strong>Applies to:</strong> anyone printing the reports listed below.</p>
+          <p class="detail">On some reports, a column or calculation could repeat the value from an earlier line instead of showing the current line&rsquo;s own value. For example, every note on a job&rsquo;s Notes report showed the first note&rsquo;s type. The reports affected were job notes in Dispatch; paycheck history and employee hours in Payroll; custom invoices and pull lists in Commercial Records Storage; billing code listings in Commercial Records Storage and Billing; agent listings, DOT physicals and licences due in Commissions; vehicle and asset reports; storage master and military storage reports; the batch, recurring entries, configured reports and simple trial balance in General Ledger; AR clearing; bank deposits; the van line analysis; warehouse inventory lot reports; and user listings in Setup. Each now prints the value for its own line.</p>
         </li>
       </ul>
     </section>
