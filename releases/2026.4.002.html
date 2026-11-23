@@ -34,7 +34,7 @@
     </div>
 
     <div class="summary-pills">
-      <span class="pill fixed">17 Fixed</span>
+      <span class="pill fixed">21 Fixed</span>
       <span class="pill improved">11 Improved</span>
     </div>
 
@@ -125,7 +125,7 @@
         <li>
           <p class="headline">Security improvements in MoverBiz <span class="tag improved">Improved</span></p>
           <p class="applies-to"><strong>Applies to:</strong> everyone using MoverBiz.</p>
-          <p class="detail">MoverBiz is now stricter about the files, folders and links it will open, and keeps technical connection details out of its messages.</p>
+          <p class="detail">MoverBiz is now stricter about the files, folders and links it will open, handles names and text typed into searches more safely, and keeps technical connection details out of its messages.</p>
         </li>
         <li>
           <p class="headline">Trip Planner showed no jobs to plan <span class="tag fixed">Fixed</span></p>
@@ -191,6 +191,26 @@
           <p class="headline">XML export left out military details <span class="tag fixed">Fixed</span></p>
           <p class="applies-to"><strong>Applies to:</strong> anyone exporting military shipments to XML.</p>
           <p class="detail">When one of a military shipment&rsquo;s number fields was blank, the export left out all of its military details. They are now exported, with the blank field left empty.</p>
+        </li>
+        <li>
+          <p class="headline">Standard letter names with an apostrophe were not checked for duplicates <span class="tag fixed">Fixed</span></p>
+          <p class="applies-to"><strong>Applies to:</strong> anyone adding or renaming standard letters in MoverBiz.</p>
+          <p class="detail">When a letter&rsquo;s name contained an apostrophe, such as O&rsquo;Brien Welcome, MoverBiz could not tell whether a letter with that name already existed, so a second letter could be saved under the same name. The check now works for any name.</p>
+        </li>
+        <li>
+          <p class="headline">Filters failed for a coordinator, dispatcher or work type with an apostrophe <span class="tag fixed">Fixed</span></p>
+          <p class="applies-to"><strong>Applies to:</strong> anyone filtering the Load Board, Job Listings or MoverBiz reports.</p>
+          <p class="detail">Choosing a move coordinator, dispatcher or work type whose ID or name contains an apostrophe stopped the list or report from loading. These now filter correctly.</p>
+        </li>
+        <li>
+          <p class="headline">Warehouse report could leave out jobs that arrived with a time of day <span class="tag fixed">Fixed</span></p>
+          <p class="applies-to"><strong>Applies to:</strong> anyone running the MoverBiz warehouse reports (New Jobs Received and Jobs in Warehouse).</p>
+          <p class="detail">The reports only counted jobs whose warehouse arrival was recorded at midnight. A job whose arrival included a time of day, as some imported jobs do, was missed on the day it arrived. Both reports now count the whole day, the same as the warehouse reports in Direct10.</p>
+        </li>
+        <li>
+          <p class="headline">The Locate box stopped at an apostrophe, * or % <span class="tag fixed">Fixed</span></p>
+          <p class="applies-to"><strong>Applies to:</strong> anyone using a Locate box above a MoverBiz list.</p>
+          <p class="detail">Typing an apostrophe, an asterisk or a percent sign into a Locate box stopped it finding anything. These characters are now matched as typed. Locating a number also now works whatever your Windows region.</p>
         </li>
         <li>
           <p class="headline">Opening MoverBiz replaced whatever you had copied to the clipboard <span class="tag fixed">Fixed</span></p>
