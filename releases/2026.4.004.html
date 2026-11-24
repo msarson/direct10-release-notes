@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Direct10 2026.4.004 Release Notes</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <div class="wrap with-sidebar">
+    <header class="site">
+      <a class="brand" href="../index.html">Direct<span>10</span> Release Notes</a>
+      <nav><a href="../index.html">All releases</a></nav>
+    </header>
+
+    <div class="layout">
+      <aside class="sidebar">
+        <h3>Releases</h3>
+        <ul>
+          <li><a href="2026.4.004.html" class="current">2026.4.004</a></li>
+          <li><a href="2026.4.003.html">2026.4.003</a></li>
+          <li><a href="2026.4.002.html">2026.4.002</a></li>
+          <li><a href="2026.4.001.html">2026.4.001</a></li>
+          <li><a href="2026.3.006.html">2026.3.006</a></li>
+          <li><a href="2026.3.005.html">2026.3.005</a></li>
+          <li><a href="2026.3.004.html">2026.3.004</a></li>
+          <li><a href="before-2026.3.004.html">Before 2026.3.004</a></li>
+        </ul>
+      </aside>
+
+      <div class="main-content">
+
+    <div class="version-panel">
+      <div class="version-name">Direct10 2026.4.004</div>
+      <div class="version-status"><span class="version-date">In development</span></div>
+    </div>
+
+    <div class="summary-pills">
+      <span class="pill fixed">1 Fixed</span>
+      <span class="pill improved">1 Improved</span>
+    </div>
+
+    <div class="highlights">
+      <h2>What you should know about 2026.4.004</h2>
+      <p>2026.4.004 fixes the MoverBiz Load Board calendar, which could show no Work Tickets for a day or week after a ticket's date or time had been changed. It also warns you when a new Work Ticket time would book an assigned resource at the same time as another Work Ticket.</p>
+    </div>
+
+    <nav class="section-nav">
+      <a href="#dispatch">Dispatch</a>
+    </nav>
+
+    <h2 class="all-changes-heading">All changes in 2026.4.004</h2>
+
+    <section class="group" id="dispatch">
+      <h2>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 16V7a1 1 0 0 1 1-1h9v10"/><path d="M13 10h4l3 3v3h-2"/><circle cx="7" cy="17" r="1.8"/><circle cx="17" cy="17" r="1.8"/><path d="M9 17h6"/></svg>
+        Dispatch
+      </h2>
+      <ul class="items">
+        <li>
+          <p class="headline">Load Board calendar showed no Work Tickets for a busy day or week <span class="tag fixed">Fixed</span></p>
+          <p class="applies-to"><strong>Applies to:</strong> anyone using the MoverBiz Load Board calendar in the Day or Week view.</p>
+          <p class="detail">After a Work Ticket's date or time had been changed, the Day and Week views could show no Work Tickets at all for that day, or for the whole week, while the Work Tickets list and the Month view still showed them. No Work Tickets were lost. Every Work Ticket now shows, side by side where they overlap, so there is no longer any need to move a ticket by a minute to bring the day back.</p>
+        </li>
+        <li>
+          <p class="headline">Warning when a new Work Ticket time double-books a resource <span class="tag improved">Improved</span></p>
+          <p class="applies-to"><strong>Applies to:</strong> anyone changing Work Ticket dates on the MoverBiz Load Board.</p>
+          <p class="detail">When you save a new <strong>Started</strong> time in the Load Board's <strong>Dates</strong> pane, and one of the Work Ticket's assigned crew members or vehicles is already on another Work Ticket at that exact time, a <strong>Resource Conflict</strong> message now lists them. Select <strong>Yes</strong> to save the new time anyway, or <strong>No</strong> to go back and change it.</p>
+        </li>
+      </ul>
+    </section>
+
+    <footer class="site">
+      Direct Systems, Inc. &mdash; questions about a release? Contact your support representative.
+    </footer>
+
+      </div>
+    </div>
+  </div>
+</body>
+</html>
