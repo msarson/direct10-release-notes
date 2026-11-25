@@ -36,13 +36,13 @@
     </div>
 
     <div class="summary-pills">
-      <span class="pill fixed">1 Fixed</span>
-      <span class="pill improved">1 Improved</span>
+      <span class="pill fixed">2 Fixed</span>
+      <span class="pill improved">2 Improved</span>
     </div>
 
     <div class="highlights">
       <h2>What you should know about 2026.4.004</h2>
-      <p>2026.4.004 fixes the MoverBiz Load Board calendar, which could show no Work Tickets for a day or week after a ticket's date or time had been changed. It also warns you when a new Work Ticket time would book an assigned resource at the same time as another Work Ticket.</p>
+      <p>2026.4.004 fixes the MoverBiz Load Board calendar, which could show no Work Tickets for a day or week after a ticket's date or time had been changed. It also warns you when a new Work Ticket time would book an assigned resource at the same time as another Work Ticket, and makes MoverBiz work properly on screens where Windows display scaling is set above 100%.</p>
     </div>
 
     <nav class="section-nav">
@@ -66,6 +66,16 @@
           <p class="headline">Warning when a new Work Ticket time double-books a resource <span class="tag improved">Improved</span></p>
           <p class="applies-to"><strong>Applies to:</strong> anyone changing Work Ticket dates on the MoverBiz Load Board.</p>
           <p class="detail">When you save a new <strong>Started</strong> time in the Load Board's <strong>Dates</strong> pane, and one of the Work Ticket's assigned crew members or vehicles is already on another Work Ticket at that exact time, a <strong>Resource Conflict</strong> message now lists them. Select <strong>Yes</strong> to save the new time anyway, or <strong>No</strong> to go back and change it.</p>
+        </li>
+        <li>
+          <p class="headline">Load Board assignments could not be made when display scaling was above 100% <span class="tag fixed">Fixed</span></p>
+          <p class="applies-to"><strong>Applies to:</strong> anyone whose Windows display scaling is set to 125%, 150% or more, which is common on laptops and high-resolution monitors.</p>
+          <p class="detail">In the Load Board's <strong>Assignments</strong> pane, the checkboxes used to assign crew members and vehicles were not shown, and clicking where they should be did nothing, so nobody could be assigned from the Load Board. The rows in MoverBiz lists were too short at those settings. They now grow with your display scaling, so the checkboxes show and the lists are easier to read.</p>
+        </li>
+        <li>
+          <p class="headline">Sharper report windows when display scaling is above 100% <span class="tag improved">Improved</span></p>
+          <p class="applies-to"><strong>Applies to:</strong> anyone whose Windows display scaling is set above 100%.</p>
+          <p class="detail">MoverBiz report windows, and the Tariff Interface, were stretched by Windows and looked slightly blurry at display scaling above 100%. They are now drawn at your display's own scale, so text and buttons are sharp.</p>
         </li>
       </ul>
     </section>
